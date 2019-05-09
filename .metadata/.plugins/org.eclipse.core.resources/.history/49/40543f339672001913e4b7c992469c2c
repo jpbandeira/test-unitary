@@ -1,0 +1,12 @@
+package com.project.test.engsoftwaretest;
+
+import org.junit.Before;
+
+public class ManagerClassLendingTest {
+
+	@Before
+	public void setUpClass() {
+		
+	}
+	
+}
