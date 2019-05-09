@@ -12,3 +12,5 @@ org.eclipse.ant.ui.tagsColor=164,176,192
 org.eclipse.ant.ui.tagsColor_bold=true
 org.eclipse.ant.ui.textColor=248,225,170
 overriddenByCSS=,org.eclipse.ant.ui.constantStringsColor_italic,org.eclipse.ant.ui.processingInstructionsColor_bold,org.eclipse.ant.ui.tagsColor_bold,org.eclipse.ant.ui.debugColor,org.eclipse.ant.ui.errorColor,org.eclipse.ant.ui.informationColor,
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

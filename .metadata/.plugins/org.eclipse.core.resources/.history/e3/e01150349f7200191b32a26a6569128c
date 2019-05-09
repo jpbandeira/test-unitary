@@ -1,0 +1,12 @@
+package funcionalities.lending;
+
+public class Lending {
+	
+	public String saveBook() {
+		
+		String mensagem;
+		return mensagem =  "sucess";
+		
+	}
+
+}
