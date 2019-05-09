@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.mockito.BDDMockito.Then"/>
+    <fullyQualifiedTypeName name="org.mockito.Mockito"/>
+    <fullyQualifiedTypeName name="funcionalities.lending.Lending"/>
+</qualifiedTypeNameHistroy>
