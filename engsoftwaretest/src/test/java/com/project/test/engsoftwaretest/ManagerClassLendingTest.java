@@ -23,9 +23,9 @@ public class ManagerClassLendingTest {
 	}
 	
 	@Test
-	public void funcionalitieCrudSaveTest() {
+	public void () {
 		
-		assertEquals("sucesso", lendingInstanceClass.saveBook());
+	
 		
 	}
 	

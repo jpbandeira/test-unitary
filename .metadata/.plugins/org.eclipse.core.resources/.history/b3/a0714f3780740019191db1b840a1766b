@@ -1,0 +1,58 @@
+package com.project.test.engsoftwaretest.company;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import funcionalities.book.Book;
+import funcionalities.student.Student;
+
+public class Library {
+	
+	private List<Student> listaDeAlunos = new ArrayList<Student>();
+	private List<Book> listaDeLivros = new ArrayList<Book>();
+	
+	public String salvarLivro(Book book) {
+		
+		listaDeLivros.add(book);
+		
+		if(listaDeLivros.size() > 0) {
+		
+			return "Sucesso";
+			
+		}else {
+			
+			return "Falha";
+			
+		}
+		
+	}
+	
+	public String Editar(int posicao) {
+		
+		if(listaDeLivros.size() > 0) {
+			
+			List posicaoDoLivro;
+			
+			posicaoDoLivro = listaDeLivros.get(posicao);
+			
+			return "Sucesso";
+			
+		}else{
+			
+			return "Falha";
+			
+		}
+		
+	}
+
+	public List<Book> getListaDeLivros() {
+		return listaDeLivros;
+	}
+
+	public void setListaDeLivros(List<Book> listaDeLivros) {
+		this.listaDeLivros = listaDeLivros;
+	}
+	
+	
+
+}

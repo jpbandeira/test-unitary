@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.mockito.BDDMockito.Then"/>
-    <fullyQualifiedTypeName name="org.mockito.Mockito"/>
-    <fullyQualifiedTypeName name="funcionalities.lending.Lending"/>
+<fullyQualifiedTypeName name="org.mockito.BDDMockito.Then"/>
+<fullyQualifiedTypeName name="funcionalities.lending.Lending"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
+<fullyQualifiedTypeName name="funcionalities.student.Student"/>
+<fullyQualifiedTypeName name="org.mockito.Mockito"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="org.junit.experimental.theories.suppliers.TestedOn"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.project.test.engsoftwaretest.company.Library"/>
+<fullyQualifiedTypeName name="funcionalities.book.Book"/>
 </qualifiedTypeNameHistroy>

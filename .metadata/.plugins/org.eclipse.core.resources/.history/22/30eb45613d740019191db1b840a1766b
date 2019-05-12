@@ -1,0 +1,13 @@
+package funcionalities.lending;
+
+public class Lending {
+	
+	private int maxLimit
+	
+	public String saveBook() {
+		
+		return "sucesso";
+		
+	}
+
+}
