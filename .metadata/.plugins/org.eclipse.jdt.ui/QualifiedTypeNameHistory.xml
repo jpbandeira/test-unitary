@@ -11,7 +11,7 @@
 <fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.project.test.engsoftwaretest.company.Library"/>
-<fullyQualifiedTypeName name="funcionalities.book.Book"/>
 <fullyQualifiedTypeName name="org.hamcrest.core.IsEqual"/>
 <fullyQualifiedTypeName name="org.hamcrest.core.Is"/>
+<fullyQualifiedTypeName name="funcionalities.book.Book"/>
 </qualifiedTypeNameHistroy>
