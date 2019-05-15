@@ -11,6 +11,8 @@ public class Library {
 	private List<Student> listaDeAlunos = new ArrayList<Student>();
 	private List<Book> listaDeLivros = new ArrayList<Book>();
 	
+	Book book = new Book();
+	
 	public String salvarLivro(Book book) {
 		
 		listaDeLivros.add(book);
@@ -27,19 +29,15 @@ public class Library {
 		
 	}
 	
-	public String Editar(Book book) {
-		
-		book = new Book();
-		salvarLivro(book);
+	public void Editar(int posicao, String nome, String autor, int anoDeCriacao) {
 		
 		if(listaDeLivros.size() > 0) {
 			
-			return "Sucesso";
-			
-		}else{
-			
-			return "Falha";
-			
+			Book livroDaPosicao = listaDeLivros.get(posicao);
+			livroDaPosicao.setNome(nome);
+			livroDaPosicao.setAutor(autor);
+			livroDaPosicao.setAnoDeCriacao(anoDeCriacao);
+		
 		}
 		
 	}

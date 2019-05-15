@@ -1,0 +1,10 @@
+package funcionalities.book;
+
+public class Book {
+	
+	private String nome;
+	private String autor;
+	private int anoDeCriacao;
+	
+
+}

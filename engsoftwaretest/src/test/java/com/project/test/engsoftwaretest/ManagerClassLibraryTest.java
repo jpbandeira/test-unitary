@@ -1,7 +1,11 @@
 package com.project.test.engsoftwaretest;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
 
+import org.hamcrest.core.Is;
+import org.hamcrest.core.IsEqual;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -36,9 +40,6 @@ public class ManagerClassLibraryTest {
 
 	@Test
 	public void processoParaEditarLivroDaListaDeLivros() {
-		
-		String mensagemLivroEditado = this.libraryInstanceClass.Editar(bookInstanceClass);
-		assertEquals("quando solicitar a edicao do livro, o mesmo ten que retornar sucesso", mensagemEsperada, mensagemLivroEditado);
 		
 		
 	}
