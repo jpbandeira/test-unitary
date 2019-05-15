@@ -6,20 +6,20 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
 
-import funcionalities.book.Book;
-import funcionalities.lending.Lending;
-import funcionalities.student.Student;
+import model.EmprestimoModel;
+import model.EstudanteModel;
+import model.LivroModel;
 
 public class ManagerClassLendingTest {
 
-	Book bookInstanceClass = null;
-	Student studentInstanceClass = null;
-	Lending lendingInstanceClass = null;
+	LivroModel bookInstanceClass = null;
+	EstudanteModel studentInstanceClass = null;
+	EmprestimoModel lendingInstanceClass = null;
 	
 	
 	@Before
 	public void setUpClass() {
-		this.lendingInstanceClass = Mockito.mock(Lending.class);
+		this.lendingInstanceClass = Mockito.mock(EmprestimoModel.class);
 	}
 
 	

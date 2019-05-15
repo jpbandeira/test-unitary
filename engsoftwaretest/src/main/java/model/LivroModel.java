@@ -1,12 +1,17 @@
-package funcionalities.book;
+package model;
 
-public class Book {
+public class LivroModel {
 	
 	private int id;
 	
 	private String nome;
 	private String autor;
 	private int anoDeCriacao;
+	
+	
+	public int getId() {
+		return id;
+	}
 	
 	public String getNome() {
 		return nome;
