@@ -13,7 +13,7 @@ public class Library {
 	
 	Book book = new Book();
 	
-	public String salvarLivro(Book book) {
+	public String SalvarLivro(Book book) {
 		
 		listaDeLivros.add(book);
 		
@@ -29,27 +29,30 @@ public class Library {
 		
 	}
 	
-	public void Editar(int posicao, String nome, String autor, int anoDeCriacao) {
+	public String EditarLivro(String nome, String autor, int anoDeCriacao) {
 		
 		if(listaDeLivros.size() > 0) {
 			
-			Book livroDaPosicao = listaDeLivros.get(posicao);
-			livroDaPosicao.setNome(nome);
-			livroDaPosicao.setAutor(autor);
-			livroDaPosicao.setAnoDeCriacao(anoDeCriacao);
-		
+			for (Book book : listaDeLivros) {
+				
+				book.setNome(nome);
+				book.setAutor(autor);
+				book.setAnoDeCriacao(anoDeCriacao);
+				
+				return "Sucesso";
+				
+			}
 		}
 		
-	}
-
-	public List<Book> getListaDeLivros() {
-		return listaDeLivros;
-	}
-
-	public void setListaDeLivros(List<Book> listaDeLivros) {
-		this.listaDeLivros = listaDeLivros;
+		return "Falha";
+		
 	}
 	
+	public String InativarLivro() {
+		
+		return "Sucesso";
+		
+	}
 	
 
 }

@@ -21,13 +21,6 @@ public class ManagerClassLendingTest {
 	public void setUpClass() {
 		this.lendingInstanceClass = Mockito.mock(Lending.class);
 	}
-	
-	@Test
-	public void () {
-		
-	
-		
-	}
-	
+
 	
 }

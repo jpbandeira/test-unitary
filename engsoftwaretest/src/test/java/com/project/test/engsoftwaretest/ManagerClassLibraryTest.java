@@ -8,6 +8,7 @@ import org.hamcrest.core.Is;
 import org.hamcrest.core.IsEqual;
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.Mockito;
 
 import com.project.test.engsoftwaretest.company.Library;
 
@@ -24,24 +25,35 @@ public class ManagerClassLibraryTest {
 	@Before
 	public void setup() {
 		
+		this.bookInstanceClass = Mockito.mock(Book.class);
 		this.libraryInstanceClass = new Library();
 		
-//		Mockito.mock(Library.class)
+		libraryInstanceClass.SalvarLivro(bookInstanceClass);
+		
 		
 	}
 	
 	@Test
 	public void processoParaSalvarLivroNaListaDeLivros() {
 		
-		String mensagemLivroSalvo = this.libraryInstanceClass.salvarLivro(bookInstanceClass);
-		assertEquals("quando chamado o metodo salvar, o mesmo tem que retornar a mensagem sucesso", mensagemEsperada, mensagemLivroSalvo );
+		assertEquals("quando chamado o metodo salvar, o mesmo tem que retornar a mensagem sucesso", mensagemEsperada,libraryInstanceClass.SalvarLivro(bookInstanceClass));
 		
 	}
 
 	@Test
 	public void processoParaEditarLivroDaListaDeLivros() {
 		
+		String mensagemLivroEditado = this.libraryInstanceClass.EditarLivro("Joao", "Pedro", 2018);
+		assertEquals("quando chamado o metodo editar, o mesmo tem que retornar sucesso", mensagemEsperada, mensagemLivroEditado);
+//		assertEquals("verificando se o valor do atributo nome esta igual ao passado no parametro do meto editar" ,bookInstanceClass.getNome(), "Joao");
 		
 	}
 	
+	@Test
+	public void processoParaInativarLivroDaListaDeLivros() {
+		
+		String mensagemLivroInativo = this.libraryInstanceClass.InativarLivro();
+		assertEquals("quando chamado o metodo InativarLiveo, o mesmo tem que retornar Sucesso", mensagemEsperada, mensagemLivroInativo);
+		
+	}
 }
