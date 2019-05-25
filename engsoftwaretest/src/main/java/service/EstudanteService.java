@@ -36,26 +36,17 @@ public class EstudanteService {
 	}
 
 	private void logicaDeEdicaoDeEstudante(String nome, String cpf, String rg, int idade) {
-
 		if (this.listaDeEstudantes.size() > 0) {
-
 			for (EstudanteModel estudanteModel : listaDeEstudantes) {
-
 				estudanteModel.setNome(nome);
 				estudanteModel.setCpf(cpf);
 				estudanteModel.setRg(rg);
 				estudanteModel.setIdade(idade);
-
 			}
-
 			estadoMetodo = true;
-
 		} else {
-
 			estadoMetodo = false;
-
 		}
-
 	}
 
 	private void logicaParaSalvarEstudanteNaLista(EstudanteModel estudanteModel) {

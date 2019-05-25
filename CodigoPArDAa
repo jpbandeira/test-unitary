@@ -1,0 +1,14 @@
+import java.util.GregorianCalendar;
+import java.text.SimpleDateFormat;
+public class ExData{
+	public static void main(String[] args){
+		GregorianCalendar calendar = new GregorianCalendar();
+		SimpleDateFormat dt = new SimpleDateFormat("dd/MM/yyyy");
+		System.out.println("Hoje eh " + dt.format(calendar.getTime()));
+		calendar.add(GregorianCalendar.DATE, -1);
+		System.out.println("Ontem foi " + dt.format(calendar.getTime()));
+		calendar.add(GregorianCalendar.DATE, 2);
+		System.out.println("Amanha serah " + dt.format(calendar.getTime()));
+		//acrescentei 2 pq já havia decrementado 1 anteriormente
+	}
+}
