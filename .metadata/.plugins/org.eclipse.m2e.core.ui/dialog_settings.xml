@@ -19,6 +19,10 @@
 			<item value="0.0.1-SNAPSHOT"/>
 		</list>
 	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
 	<section name="MavenProjectWizardArchetypePage">
 		<item value="All Catalogs" key="catalog"/>
 		<list key="projectNameTemplate">

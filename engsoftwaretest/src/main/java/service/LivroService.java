@@ -54,10 +54,5 @@ public class LivroService {
 		return "Falha";
 
 	}
-	
-	public void limpa() {
-		this.listaDeLivros.clear();
-	}
-	
 
 }

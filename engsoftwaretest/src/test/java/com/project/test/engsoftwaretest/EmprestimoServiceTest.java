@@ -2,40 +2,34 @@ package com.project.test.engsoftwaretest;
 
 import static org.junit.Assert.assertEquals;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import model.EmprestimoModel;
-import model.EstudanteModel;
 import model.LivroModel;
 import service.EmprestimoService;
-import service.EstudanteService;
-import service.LivroService;
 
-public class EmprestimoServiceTest{
+public class EmprestimoServiceTest {
+	
+	private EmprestimoService emprestimoService;
+	private EmprestimoModel emprestimoModel;
+	
+	private LivroModel livroModel;
+	
+	@Before
+	public void setUp(){
+		
+		this.emprestimoService = new EmprestimoService();
+		this.livroModel = new LivroModel();
+	}
+	
+	@Test
+	public void verificarSeUmLivroFoiAlugado() {
+		
+		this.emprestimoService.alugarLivro(livroModel);
+		assertEquals("verificando se o metodo retornar true", this.emprestimoService.alugarLivro(livroModel), true);
+		
+	}
 
-    private EstudanteService estudanteService = null;
-    private EstudanteModel estudanteModel = null;
-    private LivroService livroService = null;
-    private LivroModel livroModel = null;
-
-
-    private EmprestimoService emprestimoService = null;
-    private EmprestimoModel emprestimoModel = null;
-
-    @Before
-    public void setUpEmprestimo(){
-
-        emprestimoModel = new EmprestimoModel();
-        emprestimoService = new EmprestimoService();
-
-    }
-
-    @Test
-    public void processoParaAlugarLivro(){
-
-        this.emprestimoService.alugarLivro();
-       // assertEquals("quando chamado o metodo alugarLivro, o mesmo deve retornar true", true, this.emprestimoService.alugarLivro());
-
-    }
 }

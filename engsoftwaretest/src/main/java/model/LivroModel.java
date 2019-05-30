@@ -11,6 +11,8 @@ public class LivroModel {
 	private int anoDeCriacao;
 
 	private boolean ativoOuInativo;
+	
+	private boolean livroAlugadoOuNao;
 
 	public LivroModel() {}
 
@@ -28,6 +30,14 @@ public class LivroModel {
 
 	public String getNome() {
 		return nome;
+	}
+	
+	public boolean isLivroAlugadoOuNao() {
+		return livroAlugadoOuNao;
+	}
+
+	public void setLivroAlugadoOuNao(boolean livroAlugadoOuNao) {
+		this.livroAlugadoOuNao = livroAlugadoOuNao;
 	}
 
 	public void setNome(String nome) {

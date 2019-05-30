@@ -55,8 +55,8 @@ public class EstudanteServiceTest {
 	public void processoParaInativarOuAtivarEstudantesDaListaDeEstudantes() {
 
 		this.estudanteService.salvarEstudante(estudanteModel);
-		assertEquals("se chamado o metodo inativarOuAtivar, o mesmo tem que retornar o booleano true",
-				this.estudanteService.getEstadoSalvo(), true);
+		assertEquals("se chamado o metodo inativarOuAtivar, o mesmo tem que retornar o booleano true",true,
+				this.estudanteService.getEstadoSalvo());
 
 		assertEquals("quando inativado ou ativado o estudante, o valor final do atributo deve ser ", true,
 				this.estudanteModel.isAitvoOuInativo());
