@@ -31,7 +31,7 @@ public class EstudanteServiceTest {
 
 		this.estudanteService.salvarEstudante(estudanteModel);
 		assertEquals("se chamado o metodo salvarEstudante, o mesmo tem que retornar o booleano true",
-				this.estudanteService.getEstadoSalvo(), true);
+				true, this.estudanteService.getEstadoSalvo() );
 
 	}
 

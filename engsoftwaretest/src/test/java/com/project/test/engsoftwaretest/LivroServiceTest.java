@@ -23,11 +23,7 @@ public class LivroServiceTest {
 		this.livroService = new LivroService();
 
 	}
-	
-	@After
-	public void tearDown() {
-		this.livroService.limpa();
-	}
+
 
 	@Test
 	public void processoParaSalvarLivroNaListaDeLivros() {
