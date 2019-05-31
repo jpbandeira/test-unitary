@@ -9,10 +9,9 @@ public class LivroModel {
 	private String nome;
 	private String autor;
 	private int anoDeCriacao;
-
 	private boolean ativoOuInativo;
-	
 	private boolean livroAlugadoOuNao;
+	private boolean livroReservadoOuNao;
 
 	public LivroModel() {}
 
@@ -31,7 +30,15 @@ public class LivroModel {
 	public String getNome() {
 		return nome;
 	}
-	
+
+	public boolean isLivroReservadoOuNao() {
+		return livroReservadoOuNao;
+	}
+
+	public void setLivroReservadoOuNao(boolean livroReservadoOuNao) {
+		this.livroReservadoOuNao = livroReservadoOuNao;
+	}
+
 	public boolean isLivroAlugadoOuNao() {
 		return livroAlugadoOuNao;
 	}
