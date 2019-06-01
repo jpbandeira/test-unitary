@@ -9,6 +9,7 @@ public class LivroModel {
 	private String nome;
 	private String autor;
 	private int anoDeCriacao;
+	private int quantidadeDeExemplares = 0;
 	private boolean ativoOuInativo;
 	private boolean livroAlugadoOuNao;
 	private boolean livroReservadoOuNao;
@@ -25,6 +26,14 @@ public class LivroModel {
 
 	public int getId() {
 		return id;
+	}
+
+	public int getQuantidadeDeExemplares() {
+		return quantidadeDeExemplares;
+	}
+
+	public void setQuantidadeDeExemplares(int quantidadeDeExemplares) {
+		this.quantidadeDeExemplares = quantidadeDeExemplares;
 	}
 
 	public String getNome() {

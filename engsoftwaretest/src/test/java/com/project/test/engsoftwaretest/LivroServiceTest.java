@@ -29,9 +29,8 @@ public class LivroServiceTest {
 	public void processoParaSalvarLivroNaListaDeLivros() {
 
 		this.livroService.SalvarLivro(livroModel);
-		assertEquals("se o livro ja existir na base de dados, a mensagem de retorno tem que ser, Suceso",
-				mensagemLivroNovoNaBase, livroService.SalvarLivro(livroModel));
-		assertEquals("verificando se o valor final do atributo é 1", livroModel.getId(), 1);
+		assertEquals("verificando se o valor final do atributo de identificacão do livro é 1", livroModel.getId(), 1);
+		assertEquals("verificando se o valor da quantidade de exemplares esta sendo atualizado", 1, this.livroModel.getQuantidadeDeExemplares());
 
 	}
 

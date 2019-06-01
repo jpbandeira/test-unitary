@@ -12,7 +12,7 @@ public class LivroService {
 	public String SalvarLivro(LivroModel livroModel) {
 
 		listaDeLivros.add(livroModel);
-
+		livroModel.setQuantidadeDeExemplares(livroModel.getQuantidadeDeExemplares()+1);
 		return "Sucesso";
 
 	}
