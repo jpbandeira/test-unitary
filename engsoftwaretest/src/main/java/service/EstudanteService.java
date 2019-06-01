@@ -50,31 +50,23 @@ public class EstudanteService {
 	}
 
 	private void logicaParaSalvarEstudanteNaLista(EstudanteModel estudanteModel) {
-
 		listaDeEstudantes.add(estudanteModel);
-
 		estadoMetodo = true;
-
 	}
 
 	private void logicaParaInativarOuAtivarEstudanteDaLista(boolean ativoOuInativo) {
-
 		if (this.listaDeEstudantes.size() > 0) {
-
 			for (EstudanteModel estudanteModel : listaDeEstudantes) {
-
 				estudanteModel.setAitvoOuInativo(ativoOuInativo);
-
 			}
-
 			estadoMetodo = true;
-
 		} else {
-
 			estadoMetodo = false;
-
 		}
 
 	}
 
+	public void limpa() {
+		this.listaDeEstudantes.clear();
+	}
 }

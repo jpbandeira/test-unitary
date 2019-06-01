@@ -1,17 +1,19 @@
 package model;
 
 public class EstudanteModel {
-	
+
 	private int id;
-	
+
 	private String nome;
 	private String cpf;
 	private String rg;
 	private int idade;
 	private String email;
-	
+	private int limeteDeEmprestimos;
 	private boolean aitvoOuInativo;
-	
+
+	public EstudanteModel(){}
+
 	public EstudanteModel(String nome, String cpf, String rg, int idade, boolean aitvoOuInativo) {
 		this.id++;
 		this.nome = nome;
@@ -23,6 +25,14 @@ public class EstudanteModel {
 
 	public int getId() {
 		return id;
+	}
+
+	public int getLimeteDeEmprestimos() {
+		return limeteDeEmprestimos;
+	}
+
+	public void setLimeteDeEmprestimos(int limeteDeEmprestimos) {
+		this.limeteDeEmprestimos = limeteDeEmprestimos;
 	}
 
 	public String getEmail() {
@@ -72,8 +82,4 @@ public class EstudanteModel {
 	public void setAitvoOuInativo(boolean aitvoOuInativo) {
 		this.aitvoOuInativo = aitvoOuInativo;
 	}
-	
-	
-	
-
 }

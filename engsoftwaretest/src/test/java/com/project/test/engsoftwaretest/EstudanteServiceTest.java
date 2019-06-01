@@ -10,8 +10,8 @@ import service.EstudanteService;
 
 public class EstudanteServiceTest {
 
-	EstudanteModel estudanteModel = null;
-	EstudanteService estudanteService = null;
+	EstudanteModel estudanteModel;
+	EstudanteService estudanteService;
 
 	private String nomeEstudante = "Lucas";
 	private String cpfEstudante = "05646757338";

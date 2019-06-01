@@ -1,40 +1,49 @@
 package service;
 
+import model.EmprestimoModel;
+import model.EstudanteModel;
 import model.LivroModel;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class EmprestimoService {
 
-    private boolean retornoParaTeste;
+    private List<EmprestimoModel> listaDeEmprestimos = new ArrayList<EmprestimoModel>();
+    private EmprestimoModel emprestimoModel;
+    private EstudanteModel estudanteModel = new EstudanteModel();
 
-	public boolean isRetornoParaTeste() {
-		return retornoParaTeste;
-	}
+    private String mensagemDeRetornoSucesso = "Sucesso";
+    private String getMensagemDeRetornoFalha = "Falha";
 
-	public void setRetornoParaTeste(boolean retornoParaTeste) {
-		this.retornoParaTeste = retornoParaTeste;
-	}
-
-	public void alugarLivro(LivroModel livroModel){
+    public String alugarLivro(LivroModel livroModel){
         if (livroModel.isLivroAlugadoOuNao() == true) {
             System.out.println("Livro ja alugado, solicite reserva");
-            retornoParaTeste = true;
+            return  mensagemDeRetornoSucesso;
         } else if(livroModel.isLivroAlugadoOuNao() == false) {
             livroModel.setLivroAlugadoOuNao(true);
-            retornoParaTeste = true;
-        }else{
-            this.retornoParaTeste = false;
+            estudanteModel.setLimeteDeEmprestimos(estudanteModel.getLimeteDeEmprestimos()+1);
+            listaDeEmprestimos.add(emprestimoModel);
+            return  mensagemDeRetornoSucesso;
+        }else if(estudanteModel.getLimeteDeEmprestimos() < 4){
+            System.out.println("Limite de emprestimos excedido!");
+            return mensagemDeRetornoSucesso;
         }
-	}
+        return  getMensagemDeRetornoFalha;
+    }
 
-	public void reservarLivro(LivroModel livroModel){
-	    if(livroModel.isLivroReservadoOuNao() == true){
+    public String reservarLivro(LivroModel livroModel){
+        if(livroModel.isLivroReservadoOuNao() == true){
             System.out.println("Livro já reservado, aguarde para ter sua vez");
-            retornoParaTeste = true;
+            return  mensagemDeRetornoSucesso;
         }else if(livroModel.isLivroReservadoOuNao() == false){
-	        livroModel.setLivroReservadoOuNao(true);
-	        retornoParaTeste = true;
-        }else{
-	        retornoParaTeste = false;
+            livroModel.setLivroReservadoOuNao(true);
+            return  mensagemDeRetornoSucesso;
         }
+        return  getMensagemDeRetornoFalha;
+    }
+
+    public void limpa() {
+        this.listaDeEmprestimos.clear();
     }
 }
