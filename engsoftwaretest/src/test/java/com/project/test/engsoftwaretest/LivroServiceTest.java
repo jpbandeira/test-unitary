@@ -28,7 +28,7 @@ public class LivroServiceTest {
 	@Test
 	public void processoParaSalvarLivroNaListaDeLivros() {
 
-		this.livroService.SalvarLivro(livroModel);
+		assertEquals("verificando se o retorno do metodo é Sucesso", "Sucesso", this.livroService.SalvarLivro(livroModel));
 		assertEquals("verificando se o valor final do atributo de identificacão do livro é 1", livroModel.getId(), 1);
 		assertEquals("verificando se o valor da quantidade de exemplares esta sendo atualizado", 1, this.livroModel.getQuantidadeDeExemplares());
 
@@ -57,5 +57,4 @@ public class LivroServiceTest {
 		assertEquals("verificando se o valor final do atributo é true", livroModel.isAtivoOuInativo(), true);
 
 	}
-
 }

@@ -30,20 +30,19 @@ public class EmprestimoServiceTest {
 
 		this.livroService = new LivroService();
 		this.livroModel = new LivroModel();
-		this.livroModel.setLivroAlugadoOuNao(false);
 
 		this.estudanteService = new EstudanteService();
 		this.estudanteModel = new EstudanteModel("Joao", "05646757339", "0011", 20, true);
 
 	}
-
+/*
 	@After
 	public void afterTests() {
 		this.estudanteService.limpa();
 		this.livroService.limpa();
 		this.emprestimoService.limpa();
 	}
-
+*/
 	@Test
 	public void verificarSeUmLivroFoiAlugado() {
 		assertEquals("quando chamado o metodo alugar livro, o mesmo deve retornar como mensagaem true", "Sucesso", this.emprestimoService.alugarLivro(livroModel));
@@ -60,7 +59,7 @@ public class EmprestimoServiceTest {
 	public void verificarSeOLimiteDeEmprestimoEstaSendoSomado(){
 		this.emprestimoService.alugarLivro(livroModel);
 		assertEquals("quando chamado o metodo alugar livro, o mesmo deve soma o atrinuto de limite de emprestimo",
-				1, this.estudanteModel.getLimeteDeEmprestimos());
+				1, this.estudanteModel.getLimiteDeEmprestimos());
 	}
 
 	@Test
@@ -73,5 +72,10 @@ public class EmprestimoServiceTest {
 		this.emprestimoService.reservarLivro(livroModel);
 		assertEquals("quando chamado, o atributo retornoParaTeste tem que ser true", "Sucesso", this.emprestimoService.reservarLivro(livroModel));
 		assertEquals("quando solicitada reserva do livro novamente, o mesmo deve mostrar a mensagem de verificação e retornar true", true, this.livroModel.isLivroReservadoOuNao());
+	}
+
+	@Test
+	public void veririficarMetodoParaAplicacaoDeMulta(){
+		assertEquals("quando chamado, o mesmo deve retornar como mensagem Sucesso", "Sucesso", this.emprestimoService.aplicarMulta());
 	}
 }

@@ -9,10 +9,13 @@ public class LivroService {
 
 	private List<LivroModel> listaDeLivros = new ArrayList<LivroModel>();
 
+	private String mensagemDeRetornoSucesso = "Sucesso";
+	private String getMensagemDeRetornoFalha = "Falha";
+
 	public String SalvarLivro(LivroModel livroModel) {
 		listaDeLivros.add(livroModel);
 		livroModel.setQuantidadeDeExemplares(livroModel.getQuantidadeDeExemplares()+1);
-		return "Sucesso";
+		return mensagemDeRetornoSucesso;
 	}
 
 	public String EditarLivro(String nome, String autor, int anoDeCriacao) {
@@ -22,9 +25,9 @@ public class LivroService {
 				livroModel.setAutor(autor);
 				livroModel.setAnoDeCriacao(anoDeCriacao);
 			}
-			return "Sucesso";
+			return mensagemDeRetornoSucesso;
 		}
-		return "Falha";
+		return getMensagemDeRetornoFalha;
 	}
 
 	public String inativarOuAtivarLivro(boolean ativoOuInativo) {
@@ -32,9 +35,9 @@ public class LivroService {
 			for (LivroModel livroModel : listaDeLivros) {
 				livroModel.setAtivoOuInativo(ativoOuInativo);
 			}
-			return "Sucesso";
+			return mensagemDeRetornoSucesso;
 		}
-		return "Falha";
+		return getMensagemDeRetornoFalha;
 	}
 
 

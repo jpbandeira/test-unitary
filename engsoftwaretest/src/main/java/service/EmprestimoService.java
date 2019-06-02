@@ -22,10 +22,10 @@ public class EmprestimoService {
             return  mensagemDeRetornoSucesso;
         } else if(livroModel.isLivroAlugadoOuNao() == false) {
             livroModel.setLivroAlugadoOuNao(true);
-            estudanteModel.setLimeteDeEmprestimos(estudanteModel.getLimeteDeEmprestimos()+1);
-            listaDeEmprestimos.add(emprestimoModel);
+            this.listaDeEmprestimos.add(emprestimoModel);
+            this.estudanteModel.setLimiteDeEmprestimos(estudanteModel.getLimiteDeEmprestimos()+1);
             return  mensagemDeRetornoSucesso;
-        }else if(estudanteModel.getLimeteDeEmprestimos() < 4){
+        }else if(estudanteModel.getLimiteDeEmprestimos() < 4){
             System.out.println("Limite de emprestimos excedido!");
             return mensagemDeRetornoSucesso;
         }
@@ -41,6 +41,10 @@ public class EmprestimoService {
             return  mensagemDeRetornoSucesso;
         }
         return  getMensagemDeRetornoFalha;
+    }
+
+    public String aplicarMulta(){
+        return mensagemDeRetornoSucesso;
     }
 
     public void limpa() {

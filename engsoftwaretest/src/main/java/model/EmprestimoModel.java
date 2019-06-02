@@ -10,7 +10,7 @@ public class EmprestimoModel{
 	}
 	
 	private float descontoParaMulta;
-	private int limeteDeEmprestimos;
+	private int limiteDeEmprestimos;
 	private boolean livroAtrasadoOuNao;
 	private boolean livroReservadoOuNao;
 
@@ -25,12 +25,12 @@ public class EmprestimoModel{
 		this.descontoParaMulta = descontoParaMulta;
 	}
 
-	public int getLimeteDeEmprestimos() {
-		return limeteDeEmprestimos;
+	public int getLimiteDeEmprestimos() {
+		return limiteDeEmprestimos;
 	}
 
-	public void setLimeteDeEmprestimos(int limeteDeEmprestimos) {
-		this.limeteDeEmprestimos = limeteDeEmprestimos;
+	public void setLimiteDeEmprestimos(int limiteDeEmprestimos) {
+		this.limiteDeEmprestimos = limiteDeEmprestimos;
 	}
 
 	public boolean isLivroAtrasadoOuNao() {

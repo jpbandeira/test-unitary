@@ -9,7 +9,7 @@ public class EstudanteModel {
 	private String rg;
 	private int idade;
 	private String email;
-	private int limeteDeEmprestimos;
+	private int limiteDeEmprestimos = 0;
 	private boolean aitvoOuInativo;
 
 	public EstudanteModel(){}
@@ -27,12 +27,12 @@ public class EstudanteModel {
 		return id;
 	}
 
-	public int getLimeteDeEmprestimos() {
-		return limeteDeEmprestimos;
+	public int getLimiteDeEmprestimos() {
+		return limiteDeEmprestimos;
 	}
 
-	public void setLimeteDeEmprestimos(int limeteDeEmprestimos) {
-		this.limeteDeEmprestimos = limeteDeEmprestimos;
+	public void setLimiteDeEmprestimos(int limiteDeEmprestimos) {
+		this.limiteDeEmprestimos = limiteDeEmprestimos;
 	}
 
 	public String getEmail() {
