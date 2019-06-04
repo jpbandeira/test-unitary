@@ -22,6 +22,8 @@ public class LivroServiceTest {
 	private String autor = "Alguem";
 	private int anoDeCriacao = 2018;
 	private int quantidadeDeExemplares = 10;
+	private int getQuantidadeDeExemplaresASerAtualizado = 5;
+	private String tipoDeOperacao = "mais";
 
 	@Before
 	public void setup() {
@@ -43,7 +45,7 @@ public class LivroServiceTest {
 
 	@Test
 	public void processoParaEditarLivroDaListaDeLivros() {
-		assertEquals("quando chamado o metodo alugar livro, o mesmo deve retornar Sucesso  e atribuir 1 para o id", mensagemDeRetorno, this.livroService.SalvarLivro(this.id, nome, autor, anoDeCriacao,quantidadeDeExemplares));
+		assertEquals("quando chamado o metodo alugar livro, o mesmo deve retornar Sucesso", mensagemDeRetorno, this.livroService.SalvarLivro(this.id, nome, autor, anoDeCriacao,quantidadeDeExemplares));
 		assertEquals(1, this.livroService.getListaDeLivros().get(id).getId());
 		assertEquals("quando chamado o metodo editar, o mesmo tem que retornar sucesso", mensagemDeRetorno,
 				this.livroService.EditarLivro( 1,"Senhor", "Pedro", 2018));
@@ -53,7 +55,7 @@ public class LivroServiceTest {
 	@Test
 	public void processoParaInativarLivroDaListaDeLivros() {
 
-		assertEquals("quando chamado o metodo alugar livro, o mesmo deve retornar Sucesso  e atribuir 1 para o id", mensagemDeRetorno, this.livroService.SalvarLivro(id, nome, autor, anoDeCriacao,quantidadeDeExemplares));
+		assertEquals("quando chamado o metodo alugar livro, o mesmo deve retornar Sucesso", mensagemDeRetorno, this.livroService.SalvarLivro(id, nome, autor, anoDeCriacao,quantidadeDeExemplares));
 		String mensagemLivroInativo = this.livroService.inativarLivro(this.id ,true);
 		assertEquals("quando chamado o metodo InativarLiveo, o mesmo tem que retornar Sucesso", mensagemDeRetorno,
 				mensagemLivroInativo);
@@ -63,6 +65,10 @@ public class LivroServiceTest {
 
 	@Test
 	public void processoParaAtualizarQuantidadeDeExemplares(){
-		
+		assertEquals("quando chamado o metodo alugar livro, o mesmo deve retornar Sucesso", mensagemDeRetorno, this.livroService.SalvarLivro(id, nome, autor, anoDeCriacao,quantidadeDeExemplares));
+		assertEquals("quando chamado o metodo para atualizar quantidade de exeplares, o mesmo deve checar o tipo de operação e atuzalizar a quantidade dependendo do tipo necessario",
+				"Sucesso", this.livroService.atualizarQuantidadeDeExemplares(id, getQuantidadeDeExemplaresASerAtualizado, tipoDeOperacao));
+		assertEquals("quando chamado o metodo para atualizar quantidade de exemplares, o mesmo deve ir de 10 para 15",
+				15, this.livroService.getListaDeLivros().get(id).getQuantidadeDeExemplares());
 	}
 }
