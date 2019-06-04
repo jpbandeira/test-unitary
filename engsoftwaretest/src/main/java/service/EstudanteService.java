@@ -9,33 +9,17 @@ public class EstudanteService {
 
 	private List<EstudanteModel> listaDeEstudantes = new ArrayList<EstudanteModel>();
 
-	private boolean estadoMetodo;
+	private String mensagemDeRetornoSucesso = "Sucesso";
+	private String mensagemDeRetornoFalha = "Falha";
 
-	public boolean getEstadoSalvo() {
+	public String salvarEstudante(EstudanteModel estudanteModel) {
 
-		return this.estadoMetodo;
-
-	}
-
-	public void salvarEstudante(EstudanteModel estudanteModel) {
-
-		logicaParaSalvarEstudanteNaLista(estudanteModel);
+		listaDeEstudantes.add(estudanteModel);
+		return mensagemDeRetornoSucesso;
 
 	}
 
-	public void editarEstudante(String nome, String cpf, String rg, int idade) {
-
-		logicaDeEdicaoDeEstudante(nome, cpf, rg, idade);
-
-	}
-
-	public void inativarOuAtivarEstudante(boolean ativoOuInativo) {
-
-		logicaParaInativarOuAtivarEstudanteDaLista(ativoOuInativo);
-
-	}
-
-	private void logicaDeEdicaoDeEstudante(String nome, String cpf, String rg, int idade) {
+	public String editarEstudante(String nome, String cpf, String rg, int idade) {
 		if (this.listaDeEstudantes.size() > 0) {
 			for (EstudanteModel estudanteModel : listaDeEstudantes) {
 				estudanteModel.setNome(nome);
@@ -43,27 +27,27 @@ public class EstudanteService {
 				estudanteModel.setRg(rg);
 				estudanteModel.setIdade(idade);
 			}
-			estadoMetodo = true;
+			return mensagemDeRetornoSucesso;
 		} else {
-			estadoMetodo = false;
+			return mensagemDeRetornoFalha;
 		}
 	}
 
-	private void logicaParaSalvarEstudanteNaLista(EstudanteModel estudanteModel) {
-		listaDeEstudantes.add(estudanteModel);
-		estadoMetodo = true;
-	}
+	public String inativarEstudante(boolean inativar) {
 
-	private void logicaParaInativarOuAtivarEstudanteDaLista(boolean ativoOuInativo) {
 		if (this.listaDeEstudantes.size() > 0) {
 			for (EstudanteModel estudanteModel : listaDeEstudantes) {
-				estudanteModel.setAitvoOuInativo(ativoOuInativo);
+				estudanteModel.setAitvoOuInativo(inativar);
 			}
-			estadoMetodo = true;
+			return mensagemDeRetornoSucesso;
 		} else {
-			estadoMetodo = false;
+			return mensagemDeRetornoFalha;
 		}
 
+	}
+
+	public List<EstudanteModel> getListaDeEstudantes() {
+		return listaDeEstudantes;
 	}
 
 	public void limpa() {

@@ -10,18 +10,18 @@ import java.util.List;
 public class EmprestimoService {
 
     private List<EmprestimoModel> listaDeEmprestimos = new ArrayList<EmprestimoModel>();
-    private EmprestimoModel emprestimoModel;
-    private EstudanteModel estudanteModel = new EstudanteModel();
 
+    private EmprestimoModel emprestimoModel;
+    private EstudanteModel estudanteModel;
     private String mensagemDeRetornoSucesso = "Sucesso";
     private String getMensagemDeRetornoFalha = "Falha";
 
     public String alugarLivro(LivroModel livroModel){
-        if (livroModel.isLivroAlugadoOuNao() == true) {
+        if (livroModel.isLivroAlugado() == true) {
             System.out.println("Livro ja alugado, solicite reserva");
             return  mensagemDeRetornoSucesso;
-        } else if(livroModel.isLivroAlugadoOuNao() == false) {
-            livroModel.setLivroAlugadoOuNao(true);
+        } else if(livroModel.isLivroAlugado() == false) {
+            livroModel.setLivroAlugado(true);
             this.listaDeEmprestimos.add(emprestimoModel);
             this.estudanteModel.setLimiteDeEmprestimos(estudanteModel.getLimiteDeEmprestimos()+1);
             return  mensagemDeRetornoSucesso;
@@ -33,11 +33,11 @@ public class EmprestimoService {
     }
 
     public String reservarLivro(LivroModel livroModel){
-        if(livroModel.isLivroReservadoOuNao() == true){
+        if(livroModel.isLivroReservado() == true){
             System.out.println("Livro já reservado, aguarde para ter sua vez");
             return  mensagemDeRetornoSucesso;
-        }else if(livroModel.isLivroReservadoOuNao() == false){
-            livroModel.setLivroReservadoOuNao(true);
+        }else if(livroModel.isLivroReservado() == false){
+            livroModel.setLivroReservado(true);
             return  mensagemDeRetornoSucesso;
         }
         return  getMensagemDeRetornoFalha;

@@ -17,6 +17,7 @@ public class EstudanteServiceTest {
 	private String cpfEstudante = "05646757338";
 	private String rgEstudante = "2008";
 	private int idadeEstudante = 22;
+	private String mensagemesperada = "Sucesso";
 
 	@Before
 	public void setUpEstudante() {
@@ -31,7 +32,7 @@ public class EstudanteServiceTest {
 
 		this.estudanteService.salvarEstudante(estudanteModel);
 		assertEquals("se chamado o metodo salvarEstudante, o mesmo tem que retornar o booleano true",
-				true, this.estudanteService.getEstadoSalvo() );
+				mensagemesperada, this.estudanteService.salvarEstudante(estudanteModel));
 
 	}
 
@@ -47,16 +48,16 @@ public class EstudanteServiceTest {
 		assertEquals(this.estudanteModel.getIdade(), 22);
 
 		assertEquals("se chamado o metodo editarEstudante, o mesmo tem que retornar o booleano true",
-				this.estudanteService.getEstadoSalvo(), true);
+				mensagemesperada,this.estudanteService.editarEstudante(nomeEstudante, cpfEstudante, rgEstudante, idadeEstudante));
 
 	}
 
 	@Test
-	public void processoParaInativarOuAtivarEstudantesDaListaDeEstudantes() {
+	public void processoParainativarEstudantesDaListaDeEstudantes() {
 
 		this.estudanteService.salvarEstudante(estudanteModel);
-		assertEquals("se chamado o metodo inativarOuAtivar, o mesmo tem que retornar o booleano true",true,
-				this.estudanteService.getEstadoSalvo());
+		assertEquals("se chamado o metodo inativarOuAtivar, o mesmo tem que retornar o booleano true",mensagemesperada,
+				this.estudanteService.inativarEstudante(true));
 
 		assertEquals("quando inativado ou ativado o estudante, o valor final do atributo deve ser ", true,
 				this.estudanteModel.isAitvoOuInativo());

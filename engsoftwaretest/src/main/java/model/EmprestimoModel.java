@@ -6,16 +6,8 @@ import java.util.Date;
 
 public class EmprestimoModel{
 
-	public EmprestimoModel(){
-	}
-	
 	private float descontoParaMulta;
-	private int limiteDeEmprestimos;
-	private boolean livroAtrasadoOuNao;
-	private boolean livroReservadoOuNao;
-
-	private SimpleDateFormat  formatoDaDataDeEmprestomo = new SimpleDateFormat("dd/MM/yyyy");;
-	private Date dataDeEmprestimo;
+	private boolean livroAtrasado;
 
 	public float getDescontoParaMulta() {
 		return descontoParaMulta;
@@ -25,37 +17,11 @@ public class EmprestimoModel{
 		this.descontoParaMulta = descontoParaMulta;
 	}
 
-	public int getLimiteDeEmprestimos() {
-		return limiteDeEmprestimos;
-	}
-
-	public void setLimiteDeEmprestimos(int limiteDeEmprestimos) {
-		this.limiteDeEmprestimos = limiteDeEmprestimos;
-	}
-
 	public boolean isLivroAtrasadoOuNao() {
-		return livroAtrasadoOuNao;
+		return livroAtrasado;
 	}
 
-	public void setLivroAtrasadoOuNao(boolean livroAtrasadoOuNao) {
-		this.livroAtrasadoOuNao = livroAtrasadoOuNao;
+	public void setLivroAtrasadoOuNao(boolean livroAtrasado) {
+		this.livroAtrasado = livroAtrasado;
 	}
-
-	public boolean isLivroReservadoOuNao() {
-		return livroReservadoOuNao;
-	}
-
-	public void setLivroReservadoOuNao(boolean livroReservadoOuNao) {
-		this.livroReservadoOuNao = livroReservadoOuNao;
-	}
-
-	public Date getDataDeEmprestimo() {
-		return dataDeEmprestimo;
-	}
-
-	public void setDataDeEmprestimo(Date dataDeEmprestimo) throws ParseException {
-		this.dataDeEmprestimo = formatoDaDataDeEmprestomo.parse("25/05/2019");;
-	}
-
-
 }

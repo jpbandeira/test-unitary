@@ -4,21 +4,19 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class LivroModel {
 
-	private int id = 0;
-
+	private int id;
 	private String nome;
 	private String autor;
 	private int anoDeCriacao;
-	private int quantidadeDeExemplares = 0;
-	private boolean ativoOuInativo;
-	private boolean livroAlugadoOuNao;
-	private boolean livroReservadoOuNao;
+	private boolean inativar;
+	private boolean livroAlugado;
+	private boolean livroReservado;
 
 	public LivroModel() {}
 
-	public LivroModel(String nome, String autor, int anoDeCriacao) {
-		
-		this.id++;
+	public LivroModel(int id, boolean inativar, String nome, String autor, int anoDeCriacao) {
+		this.id = id;
+		this.inativar = inativar;
 		this.nome = nome;
 		this.autor = autor;
 		this.anoDeCriacao = anoDeCriacao;
@@ -28,32 +26,28 @@ public class LivroModel {
 		return id;
 	}
 
-	public int getQuantidadeDeExemplares() {
-		return quantidadeDeExemplares;
-	}
-
-	public void setQuantidadeDeExemplares(int quantidadeDeExemplares) {
-		this.quantidadeDeExemplares = quantidadeDeExemplares;
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getNome() {
 		return nome;
 	}
 
-	public boolean isLivroReservadoOuNao() {
-		return livroReservadoOuNao;
+	public boolean isLivroReservado() {
+		return livroReservado;
 	}
 
-	public void setLivroReservadoOuNao(boolean livroReservadoOuNao) {
-		this.livroReservadoOuNao = livroReservadoOuNao;
+	public void setLivroReservado(boolean livroReservado) {
+		this.livroReservado = livroReservado;
 	}
 
-	public boolean isLivroAlugadoOuNao() {
-		return livroAlugadoOuNao;
+	public boolean isLivroAlugado() {
+		return livroAlugado;
 	}
 
-	public void setLivroAlugadoOuNao(boolean livroAlugadoOuNao) {
-		this.livroAlugadoOuNao = livroAlugadoOuNao;
+	public void setLivroAlugado(boolean livroAlugado) {
+		this.livroAlugado = livroAlugado;
 	}
 
 	public void setNome(String nome) {
@@ -76,13 +70,11 @@ public class LivroModel {
 		this.anoDeCriacao = anoDeCriacao;
 	}
 
-	public boolean isAtivoOuInativo() {
-		return ativoOuInativo;
+	public boolean isAtivo() {
+		return inativar;
 	}
 
-	public void setAtivoOuInativo(boolean ativoOuInativo) {
-		this.ativoOuInativo = ativoOuInativo;
+	public void setAtivo(boolean inativar) {
+		this.inativar = inativar;
 	}
-	
-
 }
