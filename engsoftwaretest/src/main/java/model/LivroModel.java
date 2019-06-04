@@ -13,13 +13,12 @@ public class LivroModel {
 
 	public LivroModel() {}
 
-	public LivroModel(int id, boolean inativar, String nome, String autor, int anoDeCriacao, int quantidadeDeExemplares) {
+	public LivroModel(int id, boolean inativar, String nome, String autor, int anoDeCriacao) {
 		this.id = id;
 		this.inativar = inativar;
 		this.nome = nome;
 		this.autor = autor;
 		this.anoDeCriacao = anoDeCriacao;
-        this.quantidadeDeExemplares = quantidadeDeExemplares;
     }
 
 	public int getId() {

@@ -14,8 +14,8 @@ public class EstudanteModel {
 
 	public EstudanteModel(){}
 
-	public EstudanteModel(String nome, String cpf, String rg, int idade, boolean aitvoOuInativo) {
-		this.id++;
+	public EstudanteModel(int id,String nome, String cpf, String rg, int idade, boolean aitvoOuInativo) {
+		this.id = id;
 		this.nome = nome;
 		this.cpf = cpf;
 		this.rg = rg;

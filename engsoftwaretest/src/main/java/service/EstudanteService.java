@@ -9,41 +9,44 @@ public class EstudanteService {
 
 	private List<EstudanteModel> listaDeEstudantes = new ArrayList<EstudanteModel>();
 
+	private int idEstudante;
+
 	private String mensagemDeRetornoSucesso = "Sucesso";
 	private String mensagemDeRetornoFalha = "Falha";
 
-	public String salvarEstudante(EstudanteModel estudanteModel) {
-
+	public String salvarEstudante(int id,String nome, String cpf, String rg, int idade, boolean aitvoOuInativo) {
+		this.idEstudante = id++;
+		EstudanteModel estudanteModel = new EstudanteModel(this.idEstudante, nome, cpf, rg, idade, aitvoOuInativo);
 		listaDeEstudantes.add(estudanteModel);
 		return mensagemDeRetornoSucesso;
 
 	}
 
-	public String editarEstudante(String nome, String cpf, String rg, int idade) {
+	public String editarEstudante(int id,String nome, String cpf, String rg, int idade) {
 		if (this.listaDeEstudantes.size() > 0) {
 			for (EstudanteModel estudanteModel : listaDeEstudantes) {
-				estudanteModel.setNome(nome);
-				estudanteModel.setCpf(cpf);
-				estudanteModel.setRg(rg);
-				estudanteModel.setIdade(idade);
+				if (id == estudanteModel.getId()) {
+					estudanteModel.setNome(nome);
+					estudanteModel.setCpf(cpf);
+					estudanteModel.setRg(rg);
+					estudanteModel.setIdade(idade);
+				}
 			}
 			return mensagemDeRetornoSucesso;
-		} else {
-			return mensagemDeRetornoFalha;
 		}
+			return mensagemDeRetornoFalha;
 	}
 
-	public String inativarEstudante(boolean inativar) {
-
-		if (this.listaDeEstudantes.size() > 0) {
+	public String inativarLivro(int id , boolean inativar) {
+		if (listaDeEstudantes.size() > 0) {
 			for (EstudanteModel estudanteModel : listaDeEstudantes) {
-				estudanteModel.setAitvoOuInativo(inativar);
+				if(id == estudanteModel.getId()) {
+					estudanteModel.setAitvoOuInativo(inativar);
+				}
 			}
 			return mensagemDeRetornoSucesso;
-		} else {
-			return mensagemDeRetornoFalha;
 		}
-
+		return mensagemDeRetornoFalha;
 	}
 
 	public List<EstudanteModel> getListaDeEstudantes() {

@@ -11,16 +11,17 @@ public class LivroService {
 
 	private LivroModel livroModel;
 
-	//private int idLivro;
+	private int idLivro;
 	private static int quantidadeDeExemplares = 0;
 
 	private String mensagemDeRetornoSucesso = "Sucesso";
 	private String getMensagemDeRetornoFalha = "Falha";
 
-	public String SalvarLivro(int id, String nome, String autor, int anoDeCriacao, int quantidadeDeExemplares) {
-		id++;
-		this.quantidadeDeExemplares += quantidadeDeExemplares;
-		livroModel = new LivroModel(id,false,nome, autor, anoDeCriacao, this.quantidadeDeExemplares);
+	public String SalvarLivro(int id, String nome, String autor, int anoDeCriacao) {
+	 	this.idLivro = id++;
+		this.quantidadeDeExemplares++;
+		livroModel = new LivroModel(idLivro,false,nome, autor, anoDeCriacao);
+		livroModel.setQuantidadeDeExemplares(quantidadeDeExemplares);
 		listaDeLivros.add(livroModel);
 		return mensagemDeRetornoSucesso;
 	}
@@ -54,7 +55,7 @@ public class LivroService {
 	public String atualizarQuantidadeDeExemplares(int id, int quantidadeASerAtualizado, String tipoDeAtualizacao){
 		int quantidadeFinal;
 		for (LivroModel livroModel : listaDeLivros){
-			if (id == livroModel.getId() && quantidadeASerAtualizado >= 0) {
+			if (id == livroModel.getId() && quantidadeASerAtualizado > 0) {
 				if(tipoDeAtualizacao.equals("mais")){
 					quantidadeFinal = this.livroModel.getQuantidadeDeExemplares() + quantidadeASerAtualizado;
 					this.livroModel.setQuantidadeDeExemplares(quantidadeFinal);
