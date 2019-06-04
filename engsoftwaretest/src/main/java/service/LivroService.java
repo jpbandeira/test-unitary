@@ -1,7 +1,6 @@
 package service;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 import model.LivroModel;
@@ -12,18 +11,17 @@ public class LivroService {
 
 	private LivroModel livroModel;
 
-	private int idLivro;
+	//private int idLivro;
 	private int quantidadeDeExemplares = 0;
 
 	private String mensagemDeRetornoSucesso = "Sucesso";
 	private String getMensagemDeRetornoFalha = "Falha";
 
-	public String SalvarLivro(int id, String nome, String autor, int anoDeCriacao) {
-		this.idLivro++;
-		livroModel = new LivroModel(idLivro,false,nome, autor, anoDeCriacao);
-		quantidadeDeExemplares++;
+	public String SalvarLivro(int id, String nome, String autor, int anoDeCriacao, int quantidadeDeExemplares) {
+		id++;
+		this.quantidadeDeExemplares += quantidadeDeExemplares;
+		livroModel = new LivroModel(id,false,nome, autor, anoDeCriacao, quantidadeDeExemplares);
 		listaDeLivros.add(livroModel);
-
 		return mensagemDeRetornoSucesso;
 	}
 
@@ -41,13 +39,33 @@ public class LivroService {
 		return getMensagemDeRetornoFalha;
 	}
 
-	public String inativarLivro(String nome, String autor, int anoDeCriacao, boolean inativar) {
-		if(nome == this.livroModel.getNome() && autor == livroModel.getAutor() && anoDeCriacao == livroModel.getAnoDeCriacao()) {
+	public String inativarLivro(int id , boolean inativar) {
 			if (listaDeLivros.size() > 0) {
 				for (LivroModel livroModel : listaDeLivros) {
-					livroModel.setAtivo(inativar);
+				if(id == livroModel.getId()) {
+						livroModel.setInativar(inativar);
+					}
 				}
 				return mensagemDeRetornoSucesso;
+			}
+		return getMensagemDeRetornoFalha;
+	}
+
+	public String atualizarQuantidadeDeExemplares(int id, int quantidadeASerAtualizado){
+		int quantidadeAtualizado;
+		for (LivroModel livroModel : listaDeLivros){
+			if (id == livroModel.getId() && quantidadeASerAtualizado <= 0) {
+				if (quantidadeASerAtualizado == this.livroModel.getQuantidadeDeExemplares()) {
+					return mensagemDeRetornoSucesso;
+				} else if (quantidadeASerAtualizado > this.livroModel.getQuantidadeDeExemplares()) {
+					this.quantidadeDeExemplares += quantidadeASerAtualizado;
+					this.livroModel.setQuantidadeDeExemplares(this.quantidadeDeExemplares);
+					return mensagemDeRetornoSucesso;
+				} else if (quantidadeASerAtualizado < this.livroModel.getQuantidadeDeExemplares()) {
+					this.quantidadeDeExemplares -= quantidadeASerAtualizado;
+					this.livroModel.setQuantidadeDeExemplares(this.quantidadeDeExemplares);
+					return mensagemDeRetornoSucesso;
+				}
 			}
 		}
 		return getMensagemDeRetornoFalha;

@@ -1,26 +1,26 @@
 package model;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 public class LivroModel {
 
 	private int id;
 	private String nome;
 	private String autor;
 	private int anoDeCriacao;
+	private int quantidadeDeExemplares;
 	private boolean inativar;
 	private boolean livroAlugado;
 	private boolean livroReservado;
 
 	public LivroModel() {}
 
-	public LivroModel(int id, boolean inativar, String nome, String autor, int anoDeCriacao) {
+	public LivroModel(int id, boolean inativar, String nome, String autor, int anoDeCriacao, int quantidadeDeExemplares) {
 		this.id = id;
 		this.inativar = inativar;
 		this.nome = nome;
 		this.autor = autor;
 		this.anoDeCriacao = anoDeCriacao;
-	}
+        this.quantidadeDeExemplares = quantidadeDeExemplares;
+    }
 
 	public int getId() {
 		return id;
@@ -70,11 +70,19 @@ public class LivroModel {
 		this.anoDeCriacao = anoDeCriacao;
 	}
 
-	public boolean isAtivo() {
-		return inativar;
-	}
+    public boolean isInativar() {
+        return inativar;
+    }
 
-	public void setAtivo(boolean inativar) {
-		this.inativar = inativar;
-	}
+    public void setInativar(boolean inativar) {
+        this.inativar = inativar;
+    }
+
+    public int getQuantidadeDeExemplares() {
+        return quantidadeDeExemplares;
+    }
+
+    public void setQuantidadeDeExemplares(int quantidadeDeExemplares) {
+        this.quantidadeDeExemplares = quantidadeDeExemplares;
+    }
 }

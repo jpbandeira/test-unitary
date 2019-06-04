@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56dc0d01-7c4d-424e-8478-185179f7a3b7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engsoftwaretest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/engsoftwaretest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/EmprestimoModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/EmprestimoModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/LivroModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/LivroModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/EmprestimoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/EmprestimoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/EstudanteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/EstudanteService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/LivroService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/LivroService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EmprestimoServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EmprestimoServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EstudanteServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EstudanteServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/LivroServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/LivroServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/test/engsoftwaretest/LivroServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/test/engsoftwaretest/LivroServiceTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/classes/" />
@@ -29,20 +25,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/LivroModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="357">
+              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
               <folding>
-                <element signature="e#526#527#0" expanded="true" />
-                <element signature="e#556#557#0" expanded="true" />
-                <element signature="e#575#576#0" expanded="true" />
-                <element signature="e#783#784#0" expanded="true" />
-                <element signature="e#801#802#0" expanded="true" />
-                <element signature="e#1212#1213#0" expanded="true" />
-                <element signature="e#1231#1232#0" expanded="true" />
-                <element signature="e#1328#1329#0" expanded="true" />
-                <element signature="e#1354#1355#0" expanded="true" />
-                <element signature="e#1537#1538#0" expanded="true" />
-                <element signature="e#1568#1569#0" expanded="true" />
+                <element signature="e#538#539#0" expanded="true" />
+                <element signature="e#554#555#0" expanded="true" />
+                <element signature="e#1405#1406#0" expanded="true" />
+                <element signature="e#1436#1437#0" expanded="true" />
+                <element signature="e#1485#1486#0" expanded="true" />
+                <element signature="e#1525#1526#0" expanded="true" />
+                <element signature="e#1541#1542#0" expanded="true" />
+                <element signature="e#1586#1587#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,12 +44,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/service/LivroService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="35" column="50" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="50" />
+            <state relative-caret-position="221">
+              <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
               <folding>
-                <element signature="e#210#222#0" expanded="true" />
-                <element signature="e#1616#1617#0" expanded="true" />
-                <element signature="e#1673#1674#0" expanded="true" />
+                <element signature="e#2476#2477#0" expanded="true" />
+                <element signature="e#2533#2534#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,10 +57,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/LivroServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            <state relative-caret-position="309">
+              <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#753#754#0" expanded="true" />
+                <element signature="e#780#781#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,6 +95,8 @@
       <find>isAtivoOuInativo</find>
       <find>setAtivoOuInativo</find>
       <find>ativoOuInativo</find>
+      <find>SalvarLivro</find>
+      <find>isInativar</find>
     </findStrings>
     <replaceStrings>
       <replace>;</replace>
@@ -145,10 +141,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="1358" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1376" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -360,43 +356,44 @@
       <workItem from="1559433871769" duration="70000" />
       <workItem from="1559429379522" duration="5104000" />
       <workItem from="1559595257079" duration="13304000" />
+      <workItem from="1559623496221" duration="4699000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LivroServiceTest_processoParaSalvarLivroNaListaDeLivros - 2019.06.03 at 21h 20m 22s.xml">
-      <configuration name="LivroServiceTest.processoParaSalvarLivroNaListaDeLivros" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LivroServiceTest_processoParaSalvarLivroNaListaDeLivros - 2019.06.03 at 21h 25m 07s.xml">
-      <configuration name="LivroServiceTest.processoParaSalvarLivroNaListaDeLivros" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LivroServiceTest_processoParaSalvarLivroNaListaDeLivros - 2019.06.03 at 21h 25m 09s.xml">
-      <configuration name="LivroServiceTest.processoParaSalvarLivroNaListaDeLivros" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LivroServiceTest_processoParaSalvarLivroNaListaDeLivros - 2019.06.03 at 21h 25m 35s.xml">
-      <configuration name="LivroServiceTest.processoParaSalvarLivroNaListaDeLivros" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LivroServiceTest_processoParaSalvarLivroNaListaDeLivros - 2019.06.03 at 21h 25m 52s.xml">
-      <configuration name="LivroServiceTest.processoParaSalvarLivroNaListaDeLivros" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LivroServiceTest_processoParaSalvarLivroNaListaDeLivros - 2019.06.03 at 21h 26m 47s.xml">
-      <configuration name="LivroServiceTest.processoParaSalvarLivroNaListaDeLivros" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LivroServiceTest_processoParaEditarLivroDaListaDeLivros - 2019.06.03 at 21h 36m 28s.xml">
+    <history-entry file="LivroServiceTest_processoParaEditarLivroDaListaDeLivros - 2019.06.03 at 23h 52m 32s.xml">
       <configuration name="LivroServiceTest.processoParaEditarLivroDaListaDeLivros" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LivroServiceTest_processoParaEditarLivroDaListaDeLivros - 2019.06.03 at 21h 42m 51s.xml">
+    <history-entry file="LivroServiceTest_processoParaEditarLivroDaListaDeLivros - 2019.06.03 at 23h 56m 43s.xml">
       <configuration name="LivroServiceTest.processoParaEditarLivroDaListaDeLivros" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LivroServiceTest_processoParaEditarLivroDaListaDeLivros - 2019.06.03 at 21h 44m 03s.xml">
+    <history-entry file="LivroServiceTest_processoParaEditarLivroDaListaDeLivros - 2019.06.03 at 23h 58m 28s.xml">
       <configuration name="LivroServiceTest.processoParaEditarLivroDaListaDeLivros" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LivroServiceTest_processoParaEditarLivroDaListaDeLivros - 2019.06.03 at 21h 44m 26s.xml">
+    <history-entry file="LivroServiceTest_processoParaSalvarLivroNaListaDeLivros - 2019.06.03 at 23h 58m 37s.xml">
+      <configuration name="LivroServiceTest.processoParaSalvarLivroNaListaDeLivros" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LivroServiceTest_processoParaSalvarLivroNaListaDeLivros - 2019.06.03 at 23h 58m 53s.xml">
+      <configuration name="LivroServiceTest.processoParaSalvarLivroNaListaDeLivros" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LivroServiceTest_processoParaEditarLivroDaListaDeLivros - 2019.06.03 at 23h 59m 28s.xml">
+      <configuration name="LivroServiceTest.processoParaEditarLivroDaListaDeLivros" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LivroServiceTest_processoParaSalvarLivroNaListaDeLivros - 2019.06.04 at 00h 00m 16s.xml">
+      <configuration name="LivroServiceTest.processoParaSalvarLivroNaListaDeLivros" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LivroServiceTest_processoParaSalvarLivroNaListaDeLivros - 2019.06.04 at 00h 02m 11s.xml">
+      <configuration name="LivroServiceTest.processoParaSalvarLivroNaListaDeLivros" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LivroServiceTest_processoParaEditarLivroDaListaDeLivros - 2019.06.04 at 00h 02m 35s.xml">
+      <configuration name="LivroServiceTest.processoParaEditarLivroDaListaDeLivros" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LivroServiceTest_processoParaEditarLivroDaListaDeLivros - 2019.06.04 at 00h 03m 31s.xml">
       <configuration name="LivroServiceTest.processoParaEditarLivroDaListaDeLivros" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22635000" />
+    <option name="totallyTimeSpent" value="27334000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -408,7 +405,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1358" y="-8" width="1376" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -427,9 +424,9 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32827735" />
-      <window_info active="true" anchor="bottom" id="Run" order="11" visible="true" weight="0.27735645" />
+      <window_info active="true" anchor="bottom" id="Run" order="11" visible="true" weight="0.27659574" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -551,26 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/LivroModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#526#527#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#575#576#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-            <element signature="e#801#802#0" expanded="true" />
-            <element signature="e#1212#1213#0" expanded="true" />
-            <element signature="e#1231#1232#0" expanded="true" />
-            <element signature="e#1328#1329#0" expanded="true" />
-            <element signature="e#1354#1355#0" expanded="true" />
-            <element signature="e#1537#1538#0" expanded="true" />
-            <element signature="e#1568#1569#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -619,24 +596,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/LivroModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+          <folding>
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#1405#1406#0" expanded="true" />
+            <element signature="e#1436#1437#0" expanded="true" />
+            <element signature="e#1485#1486#0" expanded="true" />
+            <element signature="e#1525#1526#0" expanded="true" />
+            <element signature="e#1541#1542#0" expanded="true" />
+            <element signature="e#1586#1587#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/service/LivroService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="35" column="50" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="50" />
+        <state relative-caret-position="221">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
           <folding>
-            <element signature="e#210#222#0" expanded="true" />
-            <element signature="e#1616#1617#0" expanded="true" />
-            <element signature="e#1673#1674#0" expanded="true" />
+            <element signature="e#2476#2477#0" expanded="true" />
+            <element signature="e#2533#2534#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/LivroServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="309">
+          <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
           </folding>
         </state>
       </provider>
