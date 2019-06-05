@@ -5,7 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 import model.EmprestimoModel;
 import model.EstudanteModel;
-import model.LivroModel;
+import model.EstudanteModel;
 import service.EmprestimoService;
 import service.EstudanteService;
 import service.LivroService;

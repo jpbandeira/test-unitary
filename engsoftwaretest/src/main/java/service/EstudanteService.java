@@ -14,9 +14,10 @@ public class EstudanteService {
 	private String mensagemDeRetornoSucesso = "Sucesso";
 	private String mensagemDeRetornoFalha = "Falha";
 
-	public String salvarEstudante(int id,String nome, String cpf, String rg, int idade, boolean aitvoOuInativo) {
-		this.idEstudante = id++;
-		EstudanteModel estudanteModel = new EstudanteModel(this.idEstudante, nome, cpf, rg, idade, aitvoOuInativo);
+	public String salvarEstudante(EstudanteModel estudanteModel) {
+		this.idEstudante++;
+		estudanteModel.setAtivo(true);
+		estudanteModel.setId(this.idEstudante);
 		listaDeEstudantes.add(estudanteModel);
 		return mensagemDeRetornoSucesso;
 
@@ -37,11 +38,13 @@ public class EstudanteService {
 			return mensagemDeRetornoFalha;
 	}
 
-	public String inativarLivro(int id , boolean inativar) {
+	public String inativarLivro(EstudanteModel estudante) {
 		if (listaDeEstudantes.size() > 0) {
 			for (EstudanteModel estudanteModel : listaDeEstudantes) {
-				if(id == estudanteModel.getId()) {
-					estudanteModel.setAitvoOuInativo(inativar);
+				if(estudante.isAtivo() == false) {
+					estudante.setAtivo(true);
+				}else if(estudante.isAtivo() == true){
+					estudante.setAtivo(false);
 				}
 			}
 			return mensagemDeRetornoSucesso;

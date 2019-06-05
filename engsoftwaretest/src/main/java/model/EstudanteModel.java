@@ -10,17 +10,21 @@ public class EstudanteModel {
 	private int idade;
 	private String email;
 	private int limiteDeEmprestimos = 0;
-	private boolean aitvoOuInativo;
+	private boolean ativo;
 
 	public EstudanteModel(){}
 
-	public EstudanteModel(int id,String nome, String cpf, String rg, int idade, boolean aitvoOuInativo) {
+	public EstudanteModel(int id,String nome, String cpf, String rg, int idade, boolean ativo) {
 		this.id = id;
 		this.nome = nome;
 		this.cpf = cpf;
 		this.rg = rg;
 		this.idade = idade;
-		this.aitvoOuInativo = aitvoOuInativo;
+		this.ativo = ativo;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public int getId() {
@@ -75,11 +79,11 @@ public class EstudanteModel {
 		this.idade = idade;
 	}
 
-	public boolean isAitvoOuInativo() {
-		return aitvoOuInativo;
+	public boolean isAtivo() {
+		return ativo;
 	}
 
-	public void setAitvoOuInativo(boolean aitvoOuInativo) {
-		this.aitvoOuInativo = aitvoOuInativo;
+	public void setAtivo(boolean ativo) {
+		this.ativo = ativo;
 	}
 }

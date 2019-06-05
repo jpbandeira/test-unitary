@@ -7,15 +7,14 @@ public class LivroModel {
 	private String autor;
 	private int anoDeCriacao;
 	private int quantidadeDeExemplares;
-	private boolean inativar;
+	private boolean ativo;
 	private boolean livroAlugado;
 	private boolean livroReservado;
 
 	public LivroModel() {}
 
-	public LivroModel(int id, boolean inativar, String nome, String autor, int anoDeCriacao) {
-		this.id = id;
-		this.inativar = inativar;
+	public LivroModel(boolean ativo, String nome, String autor, int anoDeCriacao) {
+		this.ativo = ativo;
 		this.nome = nome;
 		this.autor = autor;
 		this.anoDeCriacao = anoDeCriacao;
@@ -69,12 +68,12 @@ public class LivroModel {
 		this.anoDeCriacao = anoDeCriacao;
 	}
 
-    public boolean isInativar() {
-        return inativar;
+    public boolean isAtivo() {
+        return ativo;
     }
 
-    public void setInativar(boolean inativar) {
-        this.inativar = inativar;
+    public void setAtivo(boolean ativo) {
+        this.ativo = ativo;
     }
 
     public int getQuantidadeDeExemplares() {

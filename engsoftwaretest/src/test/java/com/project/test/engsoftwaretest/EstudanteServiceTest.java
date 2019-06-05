@@ -60,7 +60,7 @@ public class EstudanteServiceTest {
 				this.estudanteService.inativarEstudante(true));
 
 		assertEquals("quando inativado ou ativado o estudante, o valor final do atributo deve ser ", true,
-				this.estudanteModel.isAitvoOuInativo());
+				this.estudanteModel.isAtivo());
 
 	}
 

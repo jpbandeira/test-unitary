@@ -2,14 +2,75 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56dc0d01-7c4d-424e-8478-185179f7a3b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/engsoftwaretest/.indexes/e4/92/22/81/e7/92/97/history.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/engsoftwaretest/.markers" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.projects/engsoftwaretest/.markers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.tasks.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.tasks.ui.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/120211678.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/1913109094.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/1932949083.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2033459519.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2066489604.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2233963263.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/243222331.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2630498905.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2771403403.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2841451250.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/2982035129.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3020445694.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3033206203.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3214207201.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3490315036.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3721837726.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3885805113.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/3888198363.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/46282419.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/527624335.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/584695431.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/742522455.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/750925467.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.launching/.install.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.launching/.install.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.launching/libraryInfos.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.launching/libraryInfos.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_0_1.del" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/_1.cfs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/segments.gen" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/segments.gen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/workspacestate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.core/workspacestate.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.jdt/engsoftwaretest.container" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.jdt/engsoftwaretest.container" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/version.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/EstudanteModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/EstudanteModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/LivroModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/LivroModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/EstudanteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/EstudanteService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/LivroService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/LivroService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EmprestimoServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EmprestimoServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EstudanteServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EstudanteServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/LivroServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/LivroServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/test/engsoftwaretest/LivroServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/test/engsoftwaretest/LivroServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/test/engsoftwaretest/EmprestimoServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/test/engsoftwaretest/EstudanteServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/test/engsoftwaretest/LivroServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/EmprestimoModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/EmprestimoModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/EstudanteModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/EstudanteModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/LivroModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/LivroModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/EmprestimoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/EmprestimoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/EstudanteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/EstudanteService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/LivroService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/LivroService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/classes/" />
@@ -23,30 +84,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/LivroService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/EstudanteService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-              <folding>
-                <element signature="e#1530#1531#0" expanded="true" />
-                <element signature="e#1591#1592#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -74,9 +112,17 @@
       <find>setAtivoOuInativo</find>
       <find>ativoOuInativo</find>
       <find>SalvarLivro</find>
-      <find>isInativar</find>
       <find>e atribuir 1 para o id</find>
       <find>,quantidadeDeExemplares</find>
+      <find>aitvoOuInativo</find>
+      <find>setAitvoOuInativo</find>
+      <find>isAitvoOuInativo</find>
+      <find>inativar</find>
+      <find>inativarLivro</find>
+      <find>inativarEstudante</find>
+      <find>isInativar</find>
+      <find>setInativar</find>
+      <find>LivroModel</find>
       <find>listaDeLivros</find>
     </findStrings>
     <replaceStrings>
@@ -91,10 +137,13 @@
       <replace>setLivroReservado</replace>
       <replace>isLivroAlugado</replace>
       <replace>setLivroAlugado</replace>
-      <replace>isAtivo</replace>
-      <replace>setAtivo</replace>
       <replace>inativar</replace>
       <replace />
+      <replace>ativo</replace>
+      <replace>isAtivo</replace>
+      <replace>setInativar</replace>
+      <replace>setAtivo</replace>
+      <replace>EstudanteModel</replace>
       <replace>listaDeEstudantes</replace>
     </replaceStrings>
   </component>
@@ -105,14 +154,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/asdas.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EstudanteServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/EmprestimoModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/EmprestimoService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EmprestimoServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/LivroModel.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/LivroServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/EstudanteModel.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EstudanteServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/LivroModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/LivroService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/EstudanteModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/EstudanteService.java" />
       </list>
     </option>
@@ -232,7 +281,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LivroServiceTest.processoParaAtualizarQuantidadeDeExemplares">
+  <component name="RunManager" selected="JUnit.LivroServiceTest.processoParaSalvarLivroNaListaDeLivros">
     <configuration name="EmprestimoServiceTest.verificarSeOLimiteDeEmprestimoEstaSendoSomado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="engsoftwaretest" />
       <extension name="coverage">
@@ -315,10 +364,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LivroServiceTest.processoParaSalvarLivroNaListaDeLivros" />
         <item itemvalue="JUnit.LivroServiceTest.processoParaAtualizarQuantidadeDeExemplares" />
         <item itemvalue="JUnit.LivroServiceTest.processoParaInativarLivroDaListaDeLivros" />
         <item itemvalue="JUnit.LivroServiceTest.processoParaEditarLivroDaListaDeLivros" />
-        <item itemvalue="JUnit.LivroServiceTest.processoParaSalvarLivroNaListaDeLivros" />
         <item itemvalue="JUnit.EmprestimoServiceTest.verificarSeOLimiteDeEmprestimoEstaSendoSomado" />
       </list>
     </recent_temporary>
@@ -342,6 +391,7 @@
       <workItem from="1559623496221" duration="4699000" />
       <workItem from="1559662857434" duration="5925000" />
       <workItem from="1559683155363" duration="1294000" />
+      <workItem from="1559775999353" duration="2643000" />
     </task>
     <servers />
   </component>
@@ -378,7 +428,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34553000" />
+    <option name="totallyTimeSpent" value="37196000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -390,7 +440,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -398,7 +448,7 @@
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" weight="0.24090908" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.24040511" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
@@ -410,7 +460,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32827735" />
-      <window_info anchor="bottom" id="Run" order="11" visible="true" weight="0.27580646" />
+      <window_info anchor="bottom" id="Run" order="11" weight="0.27580646" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -435,46 +485,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/asdas.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EstudanteServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/EmprestimoModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EmprestimoServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="54" column="125" selection-start-line="54" selection-start-column="125" selection-end-line="54" selection-end-column="125" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/EmprestimoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -523,47 +533,80 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EstudanteServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EmprestimoServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/LivroServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+        <state relative-caret-position="637">
+          <caret line="56" column="154" selection-start-line="56" selection-start-column="154" selection-end-line="56" selection-end-column="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/EmprestimoModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/EmprestimoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/LivroModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/EstudanteModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="102" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="102" />
-          <folding>
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/LivroService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
+        <state relative-caret-position="25">
+          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/service/EstudanteService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+        <state relative-caret-position="663">
+          <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/LivroService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="43" column="28" lean-forward="true" selection-start-line="41" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/EstudanteModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
           <folding>
-            <element signature="e#1530#1531#0" expanded="true" />
-            <element signature="e#1591#1592#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
           </folding>
         </state>
       </provider>
