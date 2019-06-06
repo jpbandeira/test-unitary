@@ -2,7 +2,7 @@ package model;
 
 public class LivroModel {
 
-	private int id = 0;
+	private int id;
 	private String nome;
 	private String autor;
 	private int anoDeCriacao;

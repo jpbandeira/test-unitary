@@ -9,17 +9,16 @@ public class LivroService {
 
 	private List<LivroModel> listaDeLivros = new ArrayList<LivroModel>();
 
-	private static int quantidadeDeExemplares = 0;
-
+	private int quantidadeDeExemplares;
+	private Integer id;
+	private String tipoDeAtualizacao;
 	private String mensagemDeRetornoSucesso = "Sucesso";
 	private String getMensagemDeRetornoFalha = "Falha";
 
 	public String SalvarLivro(LivroModel livroModel) {
-		this.quantidadeDeExemplares++;
-		livroModel.setQuantidadeDeExemplares(quantidadeDeExemplares);
 		livroModel.setAtivo(true);
-		Integer newId = listaDeLivros.isEmpty() ? 1 : listaDeLivros.get(listaDeLivros.size() - 1).getId() + 1;
-		livroModel.setId(newId);
+		this.id = listaDeLivros.isEmpty() ? 1 : listaDeLivros.get(listaDeLivros.size() - 1).getId() + 1;
+		livroModel.setId(id);
 		listaDeLivros.add(livroModel);
 		return mensagemDeRetornoSucesso;
 	}
@@ -52,22 +51,24 @@ public class LivroService {
 		return getMensagemDeRetornoFalha;
 	}
 
-	public String atualizarQuantidadeDeExemplares(LivroModel livro,int quantidadeASerAtualizado, String tipoDeAtualizacao){
+	public String atualizarQuantidadeDeExemplares(LivroModel livro ,int quantidadeASerAtualizado, String tipoDeAtualizacao){
 		int quantidadeFinal;
-		for (LivroModel livroModel : listaDeLivros){
-			if (quantidadeASerAtualizado > 0) {
-				if(tipoDeAtualizacao.equals("mais")){
-					quantidadeFinal = livro.getQuantidadeDeExemplares() + quantidadeASerAtualizado;
-					livro.setQuantidadeDeExemplares(quantidadeFinal);
-					return mensagemDeRetornoSucesso;
-				}else if(tipoDeAtualizacao.equals("menos")){
-					quantidadeFinal = livro.getQuantidadeDeExemplares() - quantidadeASerAtualizado;
-					livro.setQuantidadeDeExemplares(quantidadeFinal);
-					return mensagemDeRetornoSucesso;
-				}else {
-					quantidadeFinal = livroModel.getQuantidadeDeExemplares() * 0;
-					livro.setQuantidadeDeExemplares(quantidadeFinal);
-					return mensagemDeRetornoSucesso;
+		for (LivroModel livroModel : listaDeLivros) {
+			if (id == livro.getId()) {
+				if (quantidadeASerAtualizado > 0) {
+					if (tipoDeAtualizacao.equals("mais")) {
+						quantidadeFinal = livro.getQuantidadeDeExemplares() + quantidadeASerAtualizado;
+						livro.setQuantidadeDeExemplares(quantidadeFinal);
+						return mensagemDeRetornoSucesso;
+					} else if (tipoDeAtualizacao.equals("menos")) {
+						quantidadeFinal = livro.getQuantidadeDeExemplares() - quantidadeASerAtualizado;
+						livro.setQuantidadeDeExemplares(quantidadeFinal);
+						return mensagemDeRetornoSucesso;
+					} else {
+						quantidadeFinal = livro.getQuantidadeDeExemplares() * 0;
+						livro.setQuantidadeDeExemplares(quantidadeFinal);
+						return mensagemDeRetornoSucesso;
+					}
 				}
 			}
 		}
