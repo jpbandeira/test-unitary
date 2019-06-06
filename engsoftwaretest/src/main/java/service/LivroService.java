@@ -9,18 +9,17 @@ public class LivroService {
 
 	private List<LivroModel> listaDeLivros = new ArrayList<LivroModel>();
 
-	private int idLivro;
 	private static int quantidadeDeExemplares = 0;
 
 	private String mensagemDeRetornoSucesso = "Sucesso";
 	private String getMensagemDeRetornoFalha = "Falha";
 
 	public String SalvarLivro(LivroModel livroModel) {
-	 	this.idLivro++;
 		this.quantidadeDeExemplares++;
 		livroModel.setQuantidadeDeExemplares(quantidadeDeExemplares);
 		livroModel.setAtivo(true);
-		livroModel.setId(this.idLivro);
+		Integer newId = listaDeLivros.isEmpty() ? 1 : listaDeLivros.get(listaDeLivros.size() - 1).getId() + 1;
+		livroModel.setId(newId);
 		listaDeLivros.add(livroModel);
 		return mensagemDeRetornoSucesso;
 	}

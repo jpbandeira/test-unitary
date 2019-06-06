@@ -1,3 +1,4 @@
+/*
 package com.project.test.engsoftwaretest;
 
 import org.junit.After;
@@ -79,3 +80,4 @@ public class EmprestimoServiceTest {
 		assertEquals("quando chamado, o mesmo deve retornar como mensagem Sucesso", "Sucesso", this.emprestimoService.aplicarMulta());
 	}
 }
+*/

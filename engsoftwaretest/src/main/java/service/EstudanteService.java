@@ -9,18 +9,17 @@ public class EstudanteService {
 
 	private List<EstudanteModel> listaDeEstudantes = new ArrayList<EstudanteModel>();
 
-	private int idEstudante;
+	private static int idEstudante;
 
 	private String mensagemDeRetornoSucesso = "Sucesso";
 	private String mensagemDeRetornoFalha = "Falha";
 
 	public String salvarEstudante(EstudanteModel estudanteModel) {
-		this.idEstudante++;
+		idEstudante++;
 		estudanteModel.setAtivo(true);
 		estudanteModel.setId(this.idEstudante);
 		listaDeEstudantes.add(estudanteModel);
 		return mensagemDeRetornoSucesso;
-
 	}
 
 	public String editarEstudante(int id,String nome, String cpf, String rg, int idade) {
@@ -38,9 +37,9 @@ public class EstudanteService {
 			return mensagemDeRetornoFalha;
 	}
 
-	public String inativarLivro(EstudanteModel estudante) {
+	public String inativarEstudante(EstudanteModel estudante) {
 		if (listaDeEstudantes.size() > 0) {
-			for (EstudanteModel estudanteModel : listaDeEstudantes) {
+			for (EstudanteModel estudanteModel  : listaDeEstudantes) {
 				if(estudante.isAtivo() == false) {
 					estudante.setAtivo(true);
 				}else if(estudante.isAtivo() == true){
