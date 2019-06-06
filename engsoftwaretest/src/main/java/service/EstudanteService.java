@@ -9,37 +9,39 @@ public class EstudanteService {
 
 	private List<EstudanteModel> listaDeEstudantes = new ArrayList<EstudanteModel>();
 
-	private static int idEstudante;
+	private int id;
 
 	private String mensagemDeRetornoSucesso = "Sucesso";
 	private String mensagemDeRetornoFalha = "Falha";
 
-	public String salvarEstudante(EstudanteModel estudanteModel) {
-		idEstudante++;
+	public String SalvarLivro(EstudanteModel estudanteModel) {
 		estudanteModel.setAtivo(true);
-		estudanteModel.setId(this.idEstudante);
+		this.id = listaDeEstudantes.isEmpty() ? 1 : listaDeEstudantes.get(listaDeEstudantes.size() - 1).getId() + 1;
+		estudanteModel.setId(id);
 		listaDeEstudantes.add(estudanteModel);
 		return mensagemDeRetornoSucesso;
 	}
 
-	public String editarEstudante(int id,String nome, String cpf, String rg, int idade) {
-		if (this.listaDeEstudantes.size() > 0) {
+	public String EditarLivro(int id,String matricula ,String nome, String cpf, String rg, int idade, String email) {
+		if (listaDeEstudantes.size() > 0) {
 			for (EstudanteModel estudanteModel : listaDeEstudantes) {
-				if (id == estudanteModel.getId()) {
+				if(id == estudanteModel.getId()){
+					estudanteModel.setMatricula(matricula);
 					estudanteModel.setNome(nome);
 					estudanteModel.setCpf(cpf);
 					estudanteModel.setRg(rg);
 					estudanteModel.setIdade(idade);
+					estudanteModel.setEmail(email);
+					return mensagemDeRetornoSucesso;
 				}
 			}
-			return mensagemDeRetornoSucesso;
 		}
-			return mensagemDeRetornoFalha;
+		return mensagemDeRetornoFalha;
 	}
 
-	public String inativarEstudante(EstudanteModel estudante) {
+	public String inativarLivro(EstudanteModel estudante) {
 		if (listaDeEstudantes.size() > 0) {
-			for (EstudanteModel estudanteModel  : listaDeEstudantes) {
+			for (EstudanteModel livroModel : listaDeEstudantes) {
 				if(estudante.isAtivo() == false) {
 					estudante.setAtivo(true);
 				}else if(estudante.isAtivo() == true){
@@ -50,6 +52,7 @@ public class EstudanteService {
 		}
 		return mensagemDeRetornoFalha;
 	}
+
 
 	public List<EstudanteModel> getListaDeEstudantes() {
 		return listaDeEstudantes;

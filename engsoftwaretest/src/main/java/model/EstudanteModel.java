@@ -4,21 +4,24 @@ public class EstudanteModel {
 
 	private int id;
 
+	private String matricula;
 	private String nome;
 	private String cpf;
 	private String rg;
 	private int idade;
 	private String email;
-	private int limiteDeEmprestimos = 0;
+	private int limiteDeEmprestimos;
 	private boolean ativo;
 
 	public EstudanteModel(){}
 
-	public EstudanteModel(String nome, String cpf, String rg, int idade) {
+	public EstudanteModel(String matricula ,String nome, String cpf, String rg, int idade, String email) {
+		this.matricula = matricula;
 		this.nome = nome;
 		this.cpf = cpf;
 		this.rg = rg;
 		this.idade = idade;
+		this.email = email;
 	}
 
 	public void setId(int id) {
@@ -29,20 +32,12 @@ public class EstudanteModel {
 		return id;
 	}
 
-	public int getLimiteDeEmprestimos() {
-		return limiteDeEmprestimos;
+	public String getMatricula() {
+		return matricula;
 	}
 
-	public void setLimiteDeEmprestimos(int limiteDeEmprestimos) {
-		this.limiteDeEmprestimos = limiteDeEmprestimos;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
 	}
 
 	public String getNome() {
@@ -77,11 +72,27 @@ public class EstudanteModel {
 		this.idade = idade;
 	}
 
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+
 	public boolean isAtivo() {
 		return ativo;
 	}
 
 	public void setAtivo(boolean ativo) {
 		this.ativo = ativo;
+	}
+	public int getLimiteDeEmprestimos() {
+		return limiteDeEmprestimos;
+	}
+
+	public void setLimiteDeEmprestimos(int limiteDeEmprestimos) {
+		this.limiteDeEmprestimos = limiteDeEmprestimos;
 	}
 }
