@@ -46,38 +46,38 @@ public class EmprestimoServiceTest {
 
 	@Test
 	public void verificarSeUmLivroFoiAlugado() {
-		assertEquals("quando chamado o metodo alugar livro, o mesmo deve retornar como mensagaem true", "Sucesso", this.emprestimoService.alugarLivro(livroModel));
+		assertEquals("Quando chamado o metodo alugar livro, o mesmo deve retornar como mensagaem true", "Sucesso", this.emprestimoService.alugarLivro(livroModel));
 	}
 
 	@Test
 	public void verificarSeUmLivroJaAlugadoEstaSetadoComTrue(){
 		this.emprestimoService.alugarLivro(livroModel);
-		assertEquals("quando chamado o metodo alugar livro, o mesmo deve retornar como mensagaem Sucesso", "Sucesso", this.emprestimoService.alugarLivro(livroModel));
+		assertEquals("Quando chamado o metodo alugar livro, o mesmo deve retornar como mensagaem Sucesso", "Sucesso", this.emprestimoService.alugarLivro(livroModel));
 		assertEquals("verificar se o atributo de alugadoOuNao esta como true para true", true, this.livroModel.isLivroAlugado());
 	}
 
 	@Test
 	public void verificarSeOLimiteDeEmprestimoEstaSendoSomado(){
 		this.emprestimoService.alugarLivro(livroModel);
-		assertEquals("quando chamado o metodo alugar livro, o mesmo deve soma o atrinuto de limite de emprestimo",
+		assertEquals("Quando chamado o metodo alugar livro, o mesmo deve soma o atrinuto de limite de emprestimo",
 				1, this.estudanteModel.getLimiteDeEmprestimos());
 	}
 
 	@Test
 	public void verificaEntradaDoMetodoReservado(){
-		assertEquals("quando chamado, o atributo retornoParaTeste tem que ser true", "Sucesso", this.emprestimoService.reservarLivro(livroModel));
+		assertEquals("Quando chamado, o atributo retornoParaTeste tem que ser true", "Sucesso", this.emprestimoService.reservarLivro(livroModel));
 	}
 
 	@Test
 	public void verificarSeUmLivroJaReservadoEstaSetadoParaTrue(){
 		this.emprestimoService.reservarLivro(livroModel);
-		assertEquals("quando chamado, o atributo retornoParaTeste tem que ser true", "Sucesso", this.emprestimoService.reservarLivro(livroModel));
-		assertEquals("quando solicitada reserva do livro novamente, o mesmo deve mostrar a mensagem de verificação e retornar true", true, this.livroModel.isLivroReservado());
+		assertEquals("Quando chamado, o atributo retornoParaTeste tem que ser true", "Sucesso", this.emprestimoService.reservarLivro(livroModel));
+		assertEquals("Quando solicitada reserva do livro novamente, o mesmo deve mostrar a mensagem de verificação e retornar true", true, this.livroModel.isLivroReservado());
 	}
 
 	@Test
 	public void veririficarMetodoParaAplicacaoDeMulta(){
-		assertEquals("quando chamado, o mesmo deve retornar como mensagem Sucesso", "Sucesso", this.emprestimoService.aplicarMulta());
+		assertEquals("Quando chamado, o mesmo deve retornar como mensagem Sucesso", "Sucesso", this.emprestimoService.aplicarMulta());
 	}
 }
 */

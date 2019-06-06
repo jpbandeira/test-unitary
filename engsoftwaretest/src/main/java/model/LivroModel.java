@@ -13,8 +13,7 @@ public class LivroModel {
 
 	public LivroModel() {}
 
-	public LivroModel(boolean ativo, String nome, String autor, int anoDeCriacao) {
-		this.ativo = ativo;
+	public LivroModel(String nome, String autor, int anoDeCriacao) {
 		this.nome = nome;
 		this.autor = autor;
 		this.anoDeCriacao = anoDeCriacao;

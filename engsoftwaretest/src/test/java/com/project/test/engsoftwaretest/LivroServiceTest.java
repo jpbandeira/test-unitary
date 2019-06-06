@@ -25,7 +25,7 @@ public class LivroServiceTest {
 
 	@Before
 	public void setup() {
-		this.livro1 = new LivroModel();
+		this.livro1 = new LivroModel(nome, autor, anoDeCriacao);
 		this.livro2 = new LivroModel();
 		this.livroService = new LivroService();
 	}
@@ -37,36 +37,35 @@ public class LivroServiceTest {
 
 	@Test
 	public void processoParaSalvarLivroNaListaDeLivros() {
-		assertEquals("quando chamado o metodo alugar livro, o mesmo deve retornar Sucesso", mensagemDeRetorno, this.livroService.SalvarLivro(livro1));
-		assertEquals("quando chamado o metodo alugar livro, o mesmo deve retornar Sucesso", mensagemDeRetorno, this.livroService.SalvarLivro(livro2));
-		assertEquals("quando o salvo um livro, tem que ser somado o valor do seu ID", 2, this.livro2.getId());
+		assertEquals("Quando chamado o metodo alugar livro, o mesmo deve retornar Sucesso", mensagemDeRetorno, this.livroService.SalvarLivro(livro1));
+		//assertEquals("Quando Chamado o metodo alugar livro, o mesmo deve retornar Sucesso", mensagemDeRetorno, this.livroService.SalvarLivro(livro2));
+		assertEquals("Quando o salvo um livro, tem que ser somado o valor do seu ID de 1 para 2", 1, this.livroService.getListaDeLivros().get(0).getId());
+		assertEquals("Quando chamado o metodo salvar, o mesmo deve ser o livro como ativo", true, this.livroService.getListaDeLivros().get(0).isAtivo());
 	}
 
 	@Test
 	public void processoParaEditarLivroDaListaDeLivros() {
-		assertEquals("quando chamado o metodo alugar livro, o mesmo deve retornar Sucesso", mensagemDeRetorno, this.livroService.SalvarLivro(livro1));
-		assertEquals("quando chamado o metodo editar, o mesmo tem que retornar sucesso", mensagemDeRetorno,
+		assertEquals("Quando chamado o metodo alugar livro, o mesmo deve retornar Sucesso", mensagemDeRetorno, this.livroService.SalvarLivro(livro1));
+		assertEquals("Quando chamado o metodo editar, o mesmo tem que retornar sucesso", mensagemDeRetorno,
 				this.livroService.EditarLivro( livroService.getListaDeLivros().get(0).getId(),"Senhor", "Pedro", 2018));
-		assertEquals("verificando se o valor do atributo realmente foi editado", "Senhor", livroService.getListaDeLivros().get(0).getNome() );
+		assertEquals("Verificando se o valor do atributo realmente foi editado", "Senhor", livroService.getListaDeLivros().get(0).getNome());
 	}
 
 	@Test
 	public void processoParaInativarLivroDaListaDeLivros() {
-
-		assertEquals("quando chamado o metodo alugar livro, o mesmo deve retornar Sucesso", mensagemDeRetorno, this.livroService.SalvarLivro(livro1));
+		assertEquals("Quando chamado o metodo alugar livro, o mesmo deve retornar Sucesso", mensagemDeRetorno, this.livroService.SalvarLivro(livro1));
 		String mensagemLivroInativo = this.livroService.inativarLivro(livro1);
-		assertEquals("quando chamado o metodo InativarLiveo, o mesmo tem que retornar Sucesso", mensagemDeRetorno,
+		assertEquals("Quando chamado o metodo inativarLivro, o mesmo tem que retornar Sucesso", mensagemDeRetorno,
 				mensagemLivroInativo);
-		assertEquals("verificando se o valor final do atributo é true", false, this.livroService.getListaDeLivros().get(0).isAtivo());
-
+		assertEquals("Verificando se o valor final do atributo é false", false, this.livroService.getListaDeLivros().get(0).isAtivo());
 	}
 
 	@Test
 	public void processoParaAtualizarQuantidadeDeExemplares(){
-		assertEquals("quando chamado o metodo alugar livro, o mesmo deve retornar Sucesso", mensagemDeRetorno, this.livroService.SalvarLivro(livro1));
-		assertEquals("quando chamado o metodo para atualizar quantidade de exeplares, o mesmo deve checar o tipo de operação e atuzalizar a quantidade dependendo do tipo necessario",
+		assertEquals("Quando chamado o metodo alugar livro, o mesmo deve retornar Sucesso", mensagemDeRetorno, this.livroService.SalvarLivro(livro1));
+		assertEquals("Quando chamado o metodo para atualizar quantidade de exeplares retornar Sucesso",
 				"Sucesso", this.livroService.atualizarQuantidadeDeExemplares(this.livro1, getQuantidadeDeExemplaresASerAtualizado, tipoDeOperacao));
-		assertEquals("quando chamado o metodo para atualizar quantidade de exemplares, o mesmo deve ir de 10 para 15",
+		assertEquals("Quando chamado o metodo para atualizar quantidade de exemplares, o mesmo deve ir de 0 para 5",
 				5, this.livroService.getListaDeLivros().get(0).getQuantidadeDeExemplares());
 	}
 }

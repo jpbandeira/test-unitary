@@ -36,7 +36,7 @@ public class EstudanteServiceTest {
 	public void processoParaSalvarEstudanteDaListaDeEstudantes() {
 		assertEquals("se chamado o metodo salvarEstudante, o mesmo tem que retornar Sucesso",
 				mensagemesperada, this.estudanteService.salvarEstudante(estudanteModel));
-		assertEquals("quando chamado o metodo para salvar estudante, o mesmo deve incrementar o id", 1, estudanteService.getListaDeEstudantes().get(idEstudante).getId());
+		assertEquals("Quando chamado o metodo para salvar estudante, o mesmo deve incrementar o id", 1, estudanteService.getListaDeEstudantes().get(idEstudante).getId());
 	}
 
 	@Test
@@ -55,7 +55,7 @@ public class EstudanteServiceTest {
 		this.estudanteService.salvarEstudante(estudanteModel);
 		assertEquals("se chamado o metodo inativarOuAtivar, o mesmo tem que retornar Sucesso",mensagemesperada,
 				this.estudanteService.inativarEstudante(estudanteModel));
-		assertEquals("quando inativado ou ativado o estudante, o valor final do atributo deve ser ", false,
+		assertEquals("Quando inativado ou ativado o estudante, o valor final do atributo deve ser ", false,
 				this.estudanteModel.isAtivo());
 	}
 
