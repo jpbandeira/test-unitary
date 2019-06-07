@@ -11,11 +11,11 @@ import static org.junit.Assert.*;
 
 public class LivroServiceTest {
 
-	LivroService livroService = null;
-	LivroModel livro1 = null;
-	LivroModel livro2 = null;
+	private LivroService livroService = null;
+	private LivroModel livro1 = null;
+	private LivroModel livro2 = null;
 
-	String mensagemDeRetorno = "Sucesso";
+	private String mensagemDeRetorno = "Sucesso";
 
 	private String nome = "Senhor do aneis";
 	private String autor = "Alguem";

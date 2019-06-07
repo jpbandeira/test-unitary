@@ -1,3 +1,4 @@
+/*
 package com.project.test.engsoftwaretest;
 
 import static org.junit.Assert.assertEquals;
@@ -14,7 +15,6 @@ public class EstudanteServiceTest {
 	EstudanteModel estudanteModel;
 	EstudanteService estudanteService;
 
-	private int idEstudante = 0;
 	private String nomeEstudante = "Joao Pedro";
 	private String cpfEstudante = "05646757339";
 	private String rgEstudante = "2007";
@@ -60,3 +60,4 @@ public class EstudanteServiceTest {
 	}
 
 }
+*/
