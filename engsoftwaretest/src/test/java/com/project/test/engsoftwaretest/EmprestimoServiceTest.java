@@ -1,6 +1,7 @@
 package com.project.test.engsoftwaretest;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import model.EmprestimoModel;
 import model.EstudanteModel;
@@ -14,17 +15,6 @@ import service.LivroService;
 
 public class EmprestimoServiceTest {
     private String mensagemDeRetorno = "Sucesso";
-
-    private String matricula = "1710027";
-	private String nomeEstudante = "Joao Pedro";
-	private String cpfEstudante = "05646757339";
-	private String rgEstudante = "2007";
-	private int idadeEstudante = 20;
-	private String email = "joao@pedro.com";
-
-	private String nome = "Senhor do aneis";
-	private String autor = "Alguem";
-	private int anoDeCriacao = 2018;
 
 	private EmprestimoService emprestimoService;
 	private EmprestimoModel emprestimoModel;
@@ -41,10 +31,10 @@ public class EmprestimoServiceTest {
 		this.emprestimoModel = new EmprestimoModel();
 
 		this.livroService = new LivroService();
-		this.livroModel = new LivroModel(nome, autor, anoDeCriacao);
+		this.livroModel = new LivroModel("Senhor dos aneis", "Alguem", 2000);
 
 		this.estudanteService = new EstudanteService();
-		this.estudanteModel = new EstudanteModel(matricula,nomeEstudante, cpfEstudante, rgEstudante, idadeEstudante, email);
+		this.estudanteModel = new EstudanteModel("1710027", "Joao Pedro", "05646757339", "2007", 20, "joao@gmail.com");
 	}
 
 	@After
@@ -56,8 +46,12 @@ public class EmprestimoServiceTest {
 
 	@Test
     public void verificarMetodoParaAlugarLivro(){
-		this.livroService.SalvarLivro(livroModel);
+		this.livroService.salvarLivro(livroModel);
+		this.livroService.atualizarQuantidadeDeExemplares(livroModel, 3, "mais");
+		this.estudanteService.salvarEstudante(estudanteModel);
 	    assertEquals("Quando chamado o metodo para alugar livro, o mesmo deve retornar Sucesso",
-                mensagemDeRetorno, this.emprestimoService.alugarLivro(livroModel));
+                mensagemDeRetorno, this.emprestimoService.alugarLivro(livroModel, estudanteModel));
+	    assertEquals("quando alugado um livro, a sua quantidade em estoque deve ser decrementada", 2, livroService.getListaDeLivros().get(0).getQuantidadeDeExemplares());
+	    assertEquals("Quando um es estudante alugar um livro, o seu limite de emprestimos deve ser incrementado", 1,this.estudanteService.getListaDeEstudantes().get(0).getLimiteDeEmprestimos());
     }
 }

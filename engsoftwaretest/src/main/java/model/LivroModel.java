@@ -8,7 +8,6 @@ public class LivroModel {
 	private int anoDeCriacao;
 	private int quantidadeDeExemplares;
 	private boolean ativo;
-	private boolean livroAlugado;
 	private boolean livroReservado;
 
 	public LivroModel() {}
@@ -37,14 +36,6 @@ public class LivroModel {
 
 	public void setLivroReservado(boolean livroReservado) {
 		this.livroReservado = livroReservado;
-	}
-
-	public boolean isLivroAlugado() {
-		return livroAlugado;
-	}
-
-	public void setLivroAlugado(boolean livroAlugado) {
-		this.livroAlugado = livroAlugado;
 	}
 
 	public void setNome(String nome) {

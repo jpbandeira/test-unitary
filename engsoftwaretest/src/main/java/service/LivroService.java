@@ -7,7 +7,7 @@ import model.LivroModel;
 
 public class LivroService {
 
-	private List<LivroModel> listaDeLivros = new ArrayList<LivroModel>();
+	private static List<LivroModel> listaDeLivros = new ArrayList<LivroModel>();
 
 	private int quantidadeDeExemplares;
 	private Integer id;
@@ -15,7 +15,7 @@ public class LivroService {
 	private String mensagemDeRetornoSucesso = "Sucesso";
 	private String getMensagemDeRetornoFalha = "Falha";
 
-	public String SalvarLivro(LivroModel livroModel) {
+	public String salvarLivro(LivroModel livroModel) {
 		livroModel.setAtivo(true);
 		this.id = listaDeLivros.isEmpty() ? 1 : listaDeLivros.get(listaDeLivros.size() - 1).getId() + 1;
 		livroModel.setId(id);

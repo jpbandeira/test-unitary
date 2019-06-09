@@ -7,14 +7,14 @@ import model.EstudanteModel;
 
 public class EstudanteService {
 
-	private List<EstudanteModel> listaDeEstudantes = new ArrayList<EstudanteModel>();
+	private static List<EstudanteModel> listaDeEstudantes = new ArrayList<EstudanteModel>();
 
 	private int id;
 
 	private String mensagemDeRetornoSucesso = "Sucesso";
 	private String mensagemDeRetornoFalha = "Falha";
 
-	public String SalvarLivro(EstudanteModel estudanteModel) {
+	public String salvarEstudante(EstudanteModel estudanteModel) {
 		estudanteModel.setAtivo(true);
 		this.id = listaDeEstudantes.isEmpty() ? 1 : listaDeEstudantes.get(listaDeEstudantes.size() - 1).getId() + 1;
 		estudanteModel.setId(id);
