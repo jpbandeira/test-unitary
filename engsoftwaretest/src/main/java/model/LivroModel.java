@@ -3,11 +3,11 @@ package model;
 public class LivroModel {
 
 	private int id;
+	private boolean ativo;
 	private String nome;
 	private String autor;
 	private int anoDeCriacao;
 	private int quantidadeDeExemplares;
-	private boolean ativo;
 	private boolean livroReservado;
 
 	public LivroModel() {}

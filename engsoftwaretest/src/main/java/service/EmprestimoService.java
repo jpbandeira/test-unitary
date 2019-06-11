@@ -39,22 +39,18 @@ public class EmprestimoService {
         return  getMensagemDeRetornoFalha;
     }
 
-    /*public String reservarLivro(LivroModel livroModel){
-        if(livroModel.isLivroReservado() == true){
-            System.out.println("Livro já reservado, aguarde para ter sua vez");
-            return  mensagemDeRetornoSucesso;
-        }else if(livroModel.isLivroReservado() == false){
-            livroModel.setLivroReservado(true);
-            return  mensagemDeRetornoSucesso;
+    public String reservarLivro(LivroModel livroModel, EstudanteModel estudanteModel){
+        if(livroService.getListaDeLivros().get(livroModel.getId() - 1).isAtivo() == true) {
+            if (livroService.getListaDeLivros().get(livroModel.getId() - 1).getQuantidadeDeExemplares()  < 1) {
+                return mensagemDeRetornoSucesso;
+            }
         }
         return  getMensagemDeRetornoFalha;
     }
-*/
+
     public String aplicarMulta(){
         return mensagemDeRetornoSucesso;
     }
-
-
 
     public void limpa() {
         this.listaDeEmprestimos.clear();

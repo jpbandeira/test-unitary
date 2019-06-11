@@ -65,13 +65,19 @@ public class EmprestimoServiceTest {
 		this.emprestimoService.alugarLivro(livroModel, estudanteModel);
 		this.emprestimoService.alugarLivro(livroModel, estudanteModel);
 
-
 		this.emprestimoService.alugarLivro(livroModel, estudanteModel2);
 		this.emprestimoService.alugarLivro(livroModel, estudanteModel2);
 		this.emprestimoService.alugarLivro(livroModel, estudanteModel2);
-
 
 		assertEquals("Quando um es estudante1 alugar um livro, o seu limite de emprestimos deve ser incrementado", 3,this.estudanteService.getListaDeEstudantes().get(estudanteModel.getId() - 1).getLimiteDeEmprestimos());
 		assertEquals("Quando um es estudante2 alugar um livro, o seu limite de emprestimos deve ser incrementado", 2,this.estudanteService.getListaDeEstudantes().get(estudanteModel2.getId() - 1).getLimiteDeEmprestimos());
+	}
+
+	@Test
+	public void verificarRetornoDoMetodoReserva(){
+		this.livroService.salvarLivro(livroModel);
+		this.livroService.atualizarQuantidadeDeExemplares(livroModel, 0, "mais");
+		this.estudanteService.salvarEstudante(estudanteModel);
+		assertEquals("qunado chamado, o mesmo deve retornar Sucesso", mensagemDeRetorno, this.emprestimoService.reservarLivro(livroModel, estudanteModel));
 	}
 }
