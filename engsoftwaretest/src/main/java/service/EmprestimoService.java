@@ -18,26 +18,24 @@ public class EmprestimoService {
     private String getMensagemDeRetornoFalha = "Falha";
 
     public String alugarLivro(LivroModel livroModel, EstudanteModel estudanteModel){
-        if(livroService.getListaDeLivros().get(livroService.getListaDeLivros().size() - 1).isAtivo() == true) {
-            if (livroService.getListaDeLivros().get(livroService.getListaDeLivros().size() - 1).getQuantidadeDeExemplares() == 0) {
-                System.out.println("**Livro sem quantidade em estoque**");
+        if(livroService.getListaDeLivros().get(livroModel.getId() - 1).isAtivo() == true) {
+            if (livroService.getListaDeLivros().get(livroModel.getId() - 1).getQuantidadeDeExemplares()  < 1) {
+                System.out.println("**Livro sem quantidade em estoque** Quantidade: " + livroModel.getQuantidadeDeExemplares());
                 System.out.println("Solicite reserva!!");
             }
-            else if (livroService.getListaDeLivros().get(livroService.getListaDeLivros().size() - 1).getQuantidadeDeExemplares() > 0) {
-                if(estudanteService.getListaDeEstudantes().get(estudanteService.getListaDeEstudantes().size() - 1).getLimiteDeEmprestimos() < 3) {
-                    livroService.getListaDeLivros().get(livroService.getListaDeLivros().size() - 1).setQuantidadeDeExemplares(livroModel.getQuantidadeDeExemplares() - 1);
-                    estudanteService.getListaDeEstudantes().get(estudanteService.getListaDeEstudantes().size() - 1).setLimiteDeEmprestimos(estudanteModel.getLimiteDeEmprestimos() + 1);
+            else if (livroService.getListaDeLivros().get(livroModel.getId() - 1).getQuantidadeDeExemplares() > 0) {
+                if(estudanteService.getListaDeEstudantes().get(estudanteModel.getId() - 1).getLimiteDeEmprestimos() < 4) {
+                    livroService.getListaDeLivros().get(livroModel.getId() - 1).setQuantidadeDeExemplares(livroModel.getQuantidadeDeExemplares() - 1);
+                    estudanteService.getListaDeEstudantes().get(estudanteModel.getId() - 1).setLimiteDeEmprestimos(estudanteModel.getLimiteDeEmprestimos() + 1);
                     listaDeEmprestimos.add(emprestimoModel);
-                } else if(estudanteService.getListaDeEstudantes().get(estudanteService.getListaDeEstudantes().size() - 1).getLimiteDeEmprestimos() == 3) {
-                    System.out.println("Limite de emprestimos excedido");
+                } else if(estudanteService.getListaDeEstudantes().get(estudanteModel.getId() - 1).getLimiteDeEmprestimos() == 3) {
+                    System.out.println("Limite de emprestimos excedido para: " + estudanteModel.getNome() + " Matricula: " + estudanteModel.getMatricula());
                     System.out.println("Devolva um de seus livros para pedir novo emprestimo!!");
+                    System.out.println();
                 }
             }
             return mensagemDeRetornoSucesso;
-        }/*else if(estudanteModel.getLimiteDeEmprestimos() < 4){
-            System.out.println("Limite de emprestimos excedido!");
-            return mensagemDeRetornoSucesso;
-        }*/
+        }
         return  getMensagemDeRetornoFalha;
     }
 

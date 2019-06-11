@@ -24,6 +24,7 @@ public class EmprestimoServiceTest {
 
 	private EstudanteService estudanteService;
 	private EstudanteModel estudanteModel;
+	private EstudanteModel estudanteModel2;
 
 	@Before
 	public void setUp(){
@@ -35,6 +36,7 @@ public class EmprestimoServiceTest {
 
 		this.estudanteService = new EstudanteService();
 		this.estudanteModel = new EstudanteModel("1710027", "Joao Pedro", "05646757339", "2007", 20, "joao@gmail.com");
+		this.estudanteModel2 = new EstudanteModel("1710028", "Pedro", "05646757338", "2008", 21, "pedro@gmail.com");
 	}
 
 	@After
@@ -45,16 +47,31 @@ public class EmprestimoServiceTest {
 	}
 
 	@Test
-    public void verificarMetodoParaAlugarLivro(){
+    public void verificarRetornoMetodoParaAlugarLivro(){
 		this.livroService.salvarLivro(livroModel);
-		this.livroService.atualizarQuantidadeDeExemplares(livroModel, 10, "mais");
+		this.livroService.atualizarQuantidadeDeExemplares(livroModel, 4, "mais");
 		this.estudanteService.salvarEstudante(estudanteModel);
-		this.emprestimoService.alugarLivro(livroModel, estudanteModel);
-		this.emprestimoService.alugarLivro(livroModel, estudanteModel);
-		//this.emprestimoService.alugarLivro(livroModel, estudanteModel);
-	    assertEquals("Quando chamado o metodo para alugar livro, o mesmo deve retornar Sucesso",
-                mensagemDeRetorno, this.emprestimoService.alugarLivro(livroModel, estudanteModel));
-	    assertEquals("Quando um es estudante alugar um livro, o seu limite de emprestimos deve ser incrementado", 3,this.estudanteService.getListaDeEstudantes().get(0).getLimiteDeEmprestimos());
-		//assertEquals("quando alugado um livro, a sua quantidade em estoque deve ser decrementada", 2, livroService.getListaDeLivros().get(0).getQuantidadeDeExemplares());
+	    assertEquals("Quando chamado o metodo para alugar livro, o mesmo deve retornar Sucesso", mensagemDeRetorno, this.emprestimoService.alugarLivro(livroModel, estudanteModel));
     }
+
+    @Test
+	public void verificarLimiteDeEmprestimo(){
+		this.livroService.salvarLivro(livroModel);
+		this.livroService.atualizarQuantidadeDeExemplares(livroModel, 5, "mais");
+		this.estudanteService.salvarEstudante(estudanteModel);
+		this.estudanteService.salvarEstudante(estudanteModel2);
+
+		this.emprestimoService.alugarLivro(livroModel, estudanteModel);
+		this.emprestimoService.alugarLivro(livroModel, estudanteModel);
+		this.emprestimoService.alugarLivro(livroModel, estudanteModel);
+
+
+		this.emprestimoService.alugarLivro(livroModel, estudanteModel2);
+		this.emprestimoService.alugarLivro(livroModel, estudanteModel2);
+		this.emprestimoService.alugarLivro(livroModel, estudanteModel2);
+
+
+		assertEquals("Quando um es estudante1 alugar um livro, o seu limite de emprestimos deve ser incrementado", 3,this.estudanteService.getListaDeEstudantes().get(estudanteModel.getId() - 1).getLimiteDeEmprestimos());
+		assertEquals("Quando um es estudante2 alugar um livro, o seu limite de emprestimos deve ser incrementado", 2,this.estudanteService.getListaDeEstudantes().get(estudanteModel2.getId() - 1).getLimiteDeEmprestimos());
+	}
 }
