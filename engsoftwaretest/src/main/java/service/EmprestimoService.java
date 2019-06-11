@@ -24,12 +24,13 @@ public class EmprestimoService {
                 System.out.println("Solicite reserva!!");
             }
             else if (livroService.getListaDeLivros().get(livroService.getListaDeLivros().size() - 1).getQuantidadeDeExemplares() > 0) {
-                if(estudanteService.getListaDeEstudantes().get(estudanteService.getListaDeEstudantes().size() - 1).getLimiteDeEmprestimos() == 3) {
-                    System.out.println("Limite de emprestimos excedido");
-                } else if(estudanteService.getListaDeEstudantes().get(estudanteService.getListaDeEstudantes().size() - 1).getLimiteDeEmprestimos() < 3){
+                if(estudanteService.getListaDeEstudantes().get(estudanteService.getListaDeEstudantes().size() - 1).getLimiteDeEmprestimos() < 3) {
                     livroService.getListaDeLivros().get(livroService.getListaDeLivros().size() - 1).setQuantidadeDeExemplares(livroModel.getQuantidadeDeExemplares() - 1);
                     estudanteService.getListaDeEstudantes().get(estudanteService.getListaDeEstudantes().size() - 1).setLimiteDeEmprestimos(estudanteModel.getLimiteDeEmprestimos() + 1);
                     listaDeEmprestimos.add(emprestimoModel);
+                } else if(estudanteService.getListaDeEstudantes().get(estudanteService.getListaDeEstudantes().size() - 1).getLimiteDeEmprestimos() == 3) {
+                    System.out.println("Limite de emprestimos excedido");
+                    System.out.println("Devolva um de seus livros para pedir novo emprestimo!!");
                 }
             }
             return mensagemDeRetornoSucesso;

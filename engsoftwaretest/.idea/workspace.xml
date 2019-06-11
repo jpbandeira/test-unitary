@@ -4,12 +4,8 @@
     <list default="true" id="56dc0d01-7c4d-424e-8478-185179f7a3b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/LivroModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/LivroModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/EmprestimoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/EmprestimoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/EstudanteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/EstudanteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/LivroService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/LivroService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EmprestimoServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EmprestimoServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/LivroServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/LivroServiceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/classes/" />
@@ -28,10 +24,13 @@
         <state>
           <leaf>
             <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EmprestimoServiceTest.java">
+              <entry file="file://$PROJECT_DIR$/src/main/java/service/EmprestimoService.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="249">
-                    <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+                  <state relative-caret-position="374">
+                    <caret line="32" column="94" selection-start-line="32" selection-start-column="94" selection-end-line="32" selection-end-column="94" />
+                    <folding>
+                      <element signature="imports" expanded="true" />
+                    </folding>
                   </state>
                 </provider>
               </entry>
@@ -44,50 +43,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/EmprestimoService.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EmprestimoServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="33" column="13" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="33" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#264#281#0" expanded="true" />
-                <element signature="e#2808#2809#0" expanded="true" />
-                <element signature="e#2855#2856#0" expanded="true" />
-                <element signature="e#2902#2903#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/EmprestimoModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#243#244#0" expanded="true" />
-                <element signature="e#274#275#0" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
-                <element signature="e#385#386#0" expanded="true" />
-                <element signature="e#427#428#0" expanded="true" />
-                <element signature="e#454#455#0" expanded="true" />
-                <element signature="e#515#516#0" expanded="true" />
-                <element signature="e#556#557#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/LivroModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-              <folding>
-                <element signature="method#LivroModel#1;class#LivroModel#0" />
-                <element signature="method#setQuantidadeDeExemplares#0;class#LivroModel#0" />
-              </folding>
+            <state relative-caret-position="447">
+              <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -186,10 +145,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="1246" />
-    <option name="y" value="34" />
-    <option name="width" value="1380" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -428,43 +387,44 @@
       <workItem from="1559858446675" duration="7978000" />
       <workItem from="1560086888002" duration="240000" />
       <workItem from="1560088182757" duration="14125000" />
+      <workItem from="1560255830429" duration="2017000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.09 at 12h 10m 19s.xml">
+    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.11 at 09h 33m 16s.xml">
       <configuration name="EmprestimoServiceTest.verificarMetodoParaAlugarLivro" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.09 at 14h 41m 26s.xml">
+    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.11 at 09h 33m 45s.xml">
       <configuration name="EmprestimoServiceTest.verificarMetodoParaAlugarLivro" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.09 at 14h 43m 39s.xml">
+    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.11 at 09h 34m 05s.xml">
       <configuration name="EmprestimoServiceTest.verificarMetodoParaAlugarLivro" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.09 at 14h 50m 22s.xml">
+    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.11 at 09h 34m 17s.xml">
       <configuration name="EmprestimoServiceTest.verificarMetodoParaAlugarLivro" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.09 at 14h 50m 56s.xml">
+    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.11 at 09h 35m 14s.xml">
       <configuration name="EmprestimoServiceTest.verificarMetodoParaAlugarLivro" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.09 at 15h 36m 53s.xml">
+    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.11 at 09h 35m 57s.xml">
       <configuration name="EmprestimoServiceTest.verificarMetodoParaAlugarLivro" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.09 at 15h 40m 13s.xml">
+    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.11 at 09h 39m 33s.xml">
       <configuration name="EmprestimoServiceTest.verificarMetodoParaAlugarLivro" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.09 at 15h 44m 58s.xml">
+    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.11 at 09h 40m 04s.xml">
       <configuration name="EmprestimoServiceTest.verificarMetodoParaAlugarLivro" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.09 at 16h 09m 13s.xml">
+    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.11 at 09h 40m 14s.xml">
       <configuration name="EmprestimoServiceTest.verificarMetodoParaAlugarLivro" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.09 at 17h 31m 37s.xml">
+    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.11 at 09h 43m 09s.xml">
       <configuration name="EmprestimoServiceTest.verificarMetodoParaAlugarLivro" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71365000" />
+    <option name="totallyTimeSpent" value="73382000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -476,7 +436,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1376" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -485,7 +445,7 @@
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" weight="0.25835866" />
+      <window_info content_ui="combo" id="Project" order="6" weight="0.25787964" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
@@ -508,7 +468,7 @@
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="9" />
-      <window_info active="true" anchor="right" id="Run" order="10" visible="true" weight="0.45668694" />
+      <window_info active="true" anchor="right" id="Run" order="10" visible="true" weight="0.31770045" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,10 +479,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/engsoftwaretest$LivroServiceTest_processoParaInativarLivroDaListaDeLivros.ic" NAME="LivroServiceTest.processoParaInativarLivroDaListaDeLivros Coverage Results" MODIFIED="1559858505041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/engsoftwaretest$LivroServiceTest_processoParaAtualizarQuantidadeDeExemplares.ic" NAME="LivroServiceTest.processoParaAtualizarQuantidadeDeExemplares Coverage Results" MODIFIED="1559861090248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.project.test.engsoftwaretest.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/engsoftwaretest$LivroServiceTest_processoParaAtualizarQuantidadeDeExemplares.ic" NAME="LivroServiceTest.processoParaAtualizarQuantidadeDeExemplares Coverage Results" MODIFIED="1559861090248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/engsoftwaretest$LivroServiceTest_processoParaInativarLivroDaListaDeLivros.ic" NAME="LivroServiceTest.processoParaInativarLivroDaListaDeLivros Coverage Results" MODIFIED="1559858505041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.project.test.engsoftwaretest.*</FILTER>
     </SUITE>
   </component>
@@ -702,21 +662,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/LivroModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="method#LivroModel#1;class#LivroModel#0" />
-            <element signature="method#setQuantidadeDeExemplares#0;class#LivroModel#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/EmprestimoModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="34" lean-forward="true" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        <state relative-caret-position="119">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#243#244#0" expanded="true" />
@@ -731,24 +680,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/EmprestimoService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/LivroModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="33" column="13" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="33" selection-end-column="13" />
+        <state relative-caret-position="629">
+          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#264#281#0" expanded="true" />
-            <element signature="e#2808#2809#0" expanded="true" />
-            <element signature="e#2855#2856#0" expanded="true" />
-            <element signature="e#2902#2903#0" expanded="true" />
+            <element signature="method#setQuantidadeDeExemplares#0;class#LivroModel#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EmprestimoServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+        <state relative-caret-position="447">
+          <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/EmprestimoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="32" column="94" selection-start-line="32" selection-start-column="94" selection-end-line="32" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
