@@ -10,7 +10,6 @@ public class EstudanteService {
 	private static List<EstudanteModel> listaDeEstudantes = new ArrayList<EstudanteModel>();
 
 	private int id;
-
 	private String mensagemDeRetornoSucesso = "Sucesso";
 	private String mensagemDeRetornoFalha = "Falha";
 
@@ -22,7 +21,7 @@ public class EstudanteService {
 		return mensagemDeRetornoSucesso;
 	}
 
-	public String EditarLivro(int id,String matricula ,String nome, String cpf, String rg, int idade, String email) {
+	public String EditarEstudante(int id,String matricula ,String nome, String cpf, String rg, int idade, String email) {
 		if (listaDeEstudantes.size() > 0) {
 			for (EstudanteModel estudanteModel : listaDeEstudantes) {
 				if(id == estudanteModel.getId()){
@@ -39,7 +38,7 @@ public class EstudanteService {
 		return mensagemDeRetornoFalha;
 	}
 
-	public String inativarLivro(EstudanteModel estudante) {
+	public String inativarEstudante(EstudanteModel estudante) {
 		if (listaDeEstudantes.size() > 0) {
 			for (EstudanteModel livroModel : listaDeEstudantes) {
 				if(estudante.isAtivo() == false) {

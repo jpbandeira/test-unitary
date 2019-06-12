@@ -9,22 +9,20 @@ import java.util.Date;
 
 public class EmprestimoModel{
 
-	private Date dataDeEmprestimo;
-	private Date dataDeEntrega;
+	private Integer id;
 
-	public Date getDataDeEmprestimo() {
-		return dataDeEmprestimo;
+	public Integer getId() {
+		return id;
 	}
 
-	public void setDataDeEmprestimo(Date dataDeEmprestimo) {
-		this.dataDeEmprestimo = dataDeEmprestimo;
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
-	public Date getDataDeEntrega() {
-		return dataDeEntrega;
-	}
-
-	public void setDataDeEntrega(Date dataDeEntrega) {
-		this.dataDeEntrega = dataDeEntrega;
+	@Override
+	public String toString() {
+		return "EmprestimoModel{" +
+				"id=" + id +
+				'}';
 	}
 }

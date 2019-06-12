@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56dc0d01-7c4d-424e-8478-185179f7a3b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/EmprestimoModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/EmprestimoModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/MultaModel.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/EmprestimoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/EmprestimoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/EstudanteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/EstudanteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/MultaService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EmprestimoServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EmprestimoServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EstudanteServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EstudanteServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/LivroServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/LivroServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/test/engsoftwaretest/EmprestimoServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/test/engsoftwaretest/EmprestimoServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/project/test/engsoftwaretest/LivroServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/test/engsoftwaretest/LivroServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/EmprestimoModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/EmprestimoModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/EstudanteModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/EstudanteModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/EmprestimoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/EmprestimoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/EstudanteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/EstudanteService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/classes/" />
@@ -18,35 +29,25 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/main/java/service/EmprestimoService.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="374">
-                    <caret line="32" column="94" selection-start-line="32" selection-start-column="94" selection-end-line="32" selection-end-column="94" />
-                    <folding>
-                      <element signature="imports" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EmprestimoServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+            <state relative-caret-position="901">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EstudanteServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,7 +63,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>livroAlugado</find>
       <find>livroAlugadoOuNao</find>
       <find>livroReservadoOuNao</find>
       <find>livroAtrasadoOuNao</find>
@@ -92,6 +92,7 @@
       <find>getMensa</find>
       <find>SalvarLivro</find>
       <find>SalvarEstudante</find>
+      <find>id</find>
     </findStrings>
     <replaceStrings>
       <replace>;</replace>
@@ -125,15 +126,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/asdas.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/EmprestimoModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/teste.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/EstudanteModel.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/LivroServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EstudanteServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/LivroService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/EstudanteService.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/LivroModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/EstudanteService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EstudanteServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/LivroServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/MultaService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/MultaModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/EmprestimoModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/EstudanteModel.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EmprestimoServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/EmprestimoService.java" />
       </list>
@@ -151,12 +154,15 @@
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,7 +229,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -241,7 +246,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="Lombok plugin" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -255,8 +260,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EmprestimoServiceTest.verificarMetodoParaAlugarLivro">
-    <configuration name="EmprestimoServiceTest.verificarMetodoParaAlugarLivro" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LivroServiceTest">
+    <configuration name="EmprestimoServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="engsoftwaretest" />
       <extension name="coverage">
         <pattern>
@@ -266,8 +271,54 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.project.test.engsoftwaretest" />
       <option name="MAIN_CLASS_NAME" value="com.project.test.engsoftwaretest.EmprestimoServiceTest" />
-      <option name="METHOD_NAME" value="verificarMetodoParaAlugarLivro" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmprestimoServiceTest.verificarLimiteDeEmprestimo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="engsoftwaretest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.project.test.engsoftwaretest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.project.test.engsoftwaretest" />
+      <option name="MAIN_CLASS_NAME" value="com.project.test.engsoftwaretest.EmprestimoServiceTest" />
+      <option name="METHOD_NAME" value="verificarLimiteDeEmprestimo" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmprestimoServiceTest.verificarPrazoDeEntregaComLivroEmAtraso" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="engsoftwaretest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.project.test.engsoftwaretest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.project.test.engsoftwaretest" />
+      <option name="MAIN_CLASS_NAME" value="com.project.test.engsoftwaretest.EmprestimoServiceTest" />
+      <option name="METHOD_NAME" value="verificarPrazoDeEntregaComLivroEmAtraso" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EstudanteServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="engsoftwaretest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.project.test.engsoftwaretest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.project.test.engsoftwaretest" />
+      <option name="MAIN_CLASS_NAME" value="com.project.test.engsoftwaretest.EstudanteServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -283,38 +334,6 @@
       <option name="PACKAGE_NAME" value="com.project.test.engsoftwaretest" />
       <option name="MAIN_CLASS_NAME" value="com.project.test.engsoftwaretest.LivroServiceTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LivroServiceTest.processoParaAtualizarQuantidadeDeExemplares" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="engsoftwaretest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.project.test.engsoftwaretest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.project.test.engsoftwaretest" />
-      <option name="MAIN_CLASS_NAME" value="com.project.test.engsoftwaretest.LivroServiceTest" />
-      <option name="METHOD_NAME" value="processoParaAtualizarQuantidadeDeExemplares" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LivroServiceTest.processoParaEditarLivroDaListaDeLivros" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="engsoftwaretest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.project.test.engsoftwaretest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.project.test.engsoftwaretest" />
-      <option name="MAIN_CLASS_NAME" value="com.project.test.engsoftwaretest.LivroServiceTest" />
-      <option name="METHOD_NAME" value="processoParaEditarLivroDaListaDeLivros" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -335,29 +354,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LivroServiceTest.processoParaSalvarLivroNaListaDeLivros" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="engsoftwaretest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.project.test.engsoftwaretest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.project.test.engsoftwaretest" />
-      <option name="MAIN_CLASS_NAME" value="com.project.test.engsoftwaretest.LivroServiceTest" />
-      <option name="METHOD_NAME" value="processoParaSalvarLivroNaListaDeLivros" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EmprestimoServiceTest.verificarMetodoParaAlugarLivro" />
-        <item itemvalue="JUnit.LivroServiceTest.processoParaAtualizarQuantidadeDeExemplares" />
-        <item itemvalue="JUnit.LivroServiceTest.processoParaEditarLivroDaListaDeLivros" />
-        <item itemvalue="JUnit.LivroServiceTest.processoParaSalvarLivroNaListaDeLivros" />
         <item itemvalue="JUnit.LivroServiceTest" />
+        <item itemvalue="JUnit.EstudanteServiceTest" />
+        <item itemvalue="JUnit.EmprestimoServiceTest" />
+        <item itemvalue="JUnit.EmprestimoServiceTest.verificarLimiteDeEmprestimo" />
+        <item itemvalue="JUnit.EmprestimoServiceTest.verificarPrazoDeEntregaComLivroEmAtraso" />
       </list>
     </recent_temporary>
   </component>
@@ -388,43 +391,53 @@
       <workItem from="1560086888002" duration="240000" />
       <workItem from="1560088182757" duration="14125000" />
       <workItem from="1560255830429" duration="2017000" />
+      <workItem from="1560363833762" duration="994000" />
+      <workItem from="1560364860765" duration="10715000" />
     </task>
+    <task id="LOCAL-00001" summary="Ajustes feitos no metodo para reservarLivro e nos seus testes">
+      <created>1560367674850</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1560367674850</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.11 at 09h 33m 16s.xml">
-      <configuration name="EmprestimoServiceTest.verificarMetodoParaAlugarLivro" configurationId="JUnit" />
+    <history-entry file="EmprestimoServiceTest - 2019.06.12 at 18h 20m 40s.xml">
+      <configuration name="EmprestimoServiceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.11 at 09h 33m 45s.xml">
-      <configuration name="EmprestimoServiceTest.verificarMetodoParaAlugarLivro" configurationId="JUnit" />
+    <history-entry file="EmprestimoServiceTest_verificarLimiteDeEmprestimo - 2019.06.12 at 18h 25m 40s.xml">
+      <configuration name="EmprestimoServiceTest.verificarLimiteDeEmprestimo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.11 at 09h 34m 05s.xml">
-      <configuration name="EmprestimoServiceTest.verificarMetodoParaAlugarLivro" configurationId="JUnit" />
+    <history-entry file="EmprestimoServiceTest - 2019.06.12 at 18h 26m 45s.xml">
+      <configuration name="EmprestimoServiceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.11 at 09h 34m 17s.xml">
-      <configuration name="EmprestimoServiceTest.verificarMetodoParaAlugarLivro" configurationId="JUnit" />
+    <history-entry file="EmprestimoServiceTest_verificarLimiteDeEmprestimo - 2019.06.12 at 18h 31m 01s.xml">
+      <configuration name="EmprestimoServiceTest.verificarLimiteDeEmprestimo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.11 at 09h 35m 14s.xml">
-      <configuration name="EmprestimoServiceTest.verificarMetodoParaAlugarLivro" configurationId="JUnit" />
+    <history-entry file="EmprestimoServiceTest_verificarLimiteDeEmprestimo - 2019.06.12 at 18h 31m 17s.xml">
+      <configuration name="EmprestimoServiceTest.verificarLimiteDeEmprestimo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.11 at 09h 35m 57s.xml">
-      <configuration name="EmprestimoServiceTest.verificarMetodoParaAlugarLivro" configurationId="JUnit" />
+    <history-entry file="EmprestimoServiceTest_verificarLimiteDeEmprestimo - 2019.06.12 at 18h 35m 50s.xml">
+      <configuration name="EmprestimoServiceTest.verificarLimiteDeEmprestimo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.11 at 09h 39m 33s.xml">
-      <configuration name="EmprestimoServiceTest.verificarMetodoParaAlugarLivro" configurationId="JUnit" />
+    <history-entry file="EmprestimoServiceTest_verificarLimiteDeEmprestimo - 2019.06.12 at 18h 37m 48s.xml">
+      <configuration name="EmprestimoServiceTest.verificarLimiteDeEmprestimo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.11 at 09h 40m 04s.xml">
-      <configuration name="EmprestimoServiceTest.verificarMetodoParaAlugarLivro" configurationId="JUnit" />
+    <history-entry file="EmprestimoServiceTest_verificarLimiteDeEmprestimo - 2019.06.12 at 18h 38m 57s.xml">
+      <configuration name="EmprestimoServiceTest.verificarLimiteDeEmprestimo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.11 at 09h 40m 14s.xml">
-      <configuration name="EmprestimoServiceTest.verificarMetodoParaAlugarLivro" configurationId="JUnit" />
+    <history-entry file="EmprestimoServiceTest_verificarLimiteDeEmprestimo - 2019.06.12 at 18h 39m 42s.xml">
+      <configuration name="EmprestimoServiceTest.verificarLimiteDeEmprestimo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EmprestimoServiceTest_verificarMetodoParaAlugarLivro - 2019.06.11 at 09h 43m 09s.xml">
-      <configuration name="EmprestimoServiceTest.verificarMetodoParaAlugarLivro" configurationId="JUnit" />
+    <history-entry file="EmprestimoServiceTest - 2019.06.12 at 18h 39m 46s.xml">
+      <configuration name="EmprestimoServiceTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73382000" />
+    <option name="totallyTimeSpent" value="85091000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -436,7 +449,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -445,11 +458,43 @@
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" weight="0.25787964" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.26012793" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.512275" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.51137596" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32394367" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.3295129" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.32995737" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="9" />
+      <window_info anchor="right" id="Run" order="10" visible="true" weight="0.34061834" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.26012793" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.51137596" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
@@ -468,11 +513,33 @@
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="9" />
-      <window_info active="true" anchor="right" id="Run" order="10" visible="true" weight="0.31770045" />
-    </layout>
+      <window_info anchor="right" id="Run" order="10" weight="0.5101279" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ajustes feitos no metodo para reservarLivro e nos seus testes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajustes feitos no metodo para reservarLivro e nos seus testes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/service/EmprestimoService.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/service/EmprestimoService.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -488,107 +555,19 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/asdas.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/RunBefores.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/notification/RunNotifier.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#870#1063#0" expanded="true" />
-            <element signature="e#1062#1063#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/MultipleFailureException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/Throwables.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/notification/Failure.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/EachTestNotifier.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="226" column="16" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
-          <folding>
-            <element signature="e#2111#2112#0" expanded="true" />
-            <element signature="e#2155#2156#0" expanded="true" />
-            <element signature="e#5951#6086#0" expanded="true" />
-            <element signature="e#6085#6086#0" expanded="true" />
-            <element signature="e#6484#6648#0" expanded="true" />
-            <element signature="e#6647#6648#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/InvokeMethod.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/RunBefores.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/notification/RunNotifier.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/MultipleFailureException.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/Throwables.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/notification/Failure.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/EachTestNotifier.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/JUnitCore.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/teste.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="e#1926#1927#0" expanded="true" />
-            <element signature="e#1972#1973#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -596,111 +575,123 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EstudanteServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="36" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="20" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/RunAfters.class" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/LivroServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="21" selection-end-column="36" />
+        <state relative-caret-position="816">
+          <caret line="57" column="55" selection-start-line="57" selection-start-column="55" selection-end-line="57" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/RunAfters.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/MultaService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="119">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/MultaModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/EstudanteService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#1657#1658#0" expanded="true" />
-            <element signature="e#1688#1689#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/EstudanteModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#639#640#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#742#743#0" expanded="true" />
-            <element signature="e#1349#1350#0" expanded="true" />
-            <element signature="e#1374#1375#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/LivroService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2484#2485#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/EmprestimoModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#274#275#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/LivroModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+        <state relative-caret-position="267">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
           <folding>
-            <element signature="method#setQuantidadeDeExemplares#0;class#LivroModel#0" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+            <element signature="e#1081#1082#0" expanded="true" />
+            <element signature="e#1124#1125#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+            <element signature="e#1204#1205#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/EstudanteService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#1699#1700#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/EstudanteModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
+          <folding>
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1374#1375#0" expanded="true" />
+            <element signature="e#1413#1414#0" expanded="true" />
+            <element signature="e#1446#1447#0" expanded="true" />
+            <element signature="e#1510#1511#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/LivroService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2457#2458#0" expanded="true" />
+            <element signature="e#2484#2485#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/EmprestimoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="26" column="122" selection-start-line="26" selection-start-column="122" selection-end-line="26" selection-end-column="122" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3325#3326#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EmprestimoServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+        <state relative-caret-position="901">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/EmprestimoService.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/project/test/engsoftwaretest/EstudanteServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="32" column="94" selection-start-line="32" selection-start-column="94" selection-end-line="32" selection-end-column="94" />
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -84,4 +84,5 @@ public class EmprestimoServiceTest {
 		assertEquals("qunado chamado, o mesmo deve retornar Sucesso", mensagemDeRetorno, this.emprestimoService.reservarLivro(livroModel, estudanteModel2));
 		assertEquals("quando reservado um livro, o atributo livroResercado tem que ter como valor true", true, livroService.getListaDeLivros().get(livroModel.getId() - 1).isLivroReservado());
 	}
+
 }

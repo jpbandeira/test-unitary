@@ -9,7 +9,7 @@ import java.util.List;
 
 public class EmprestimoService {
 
-    private static List<EmprestimoModel> listaDeEmprestimos = new ArrayList<EmprestimoModel>();
+    private static List<EmprestimoModel> listaDeEmprestimos = new ArrayList<>();
 
     private LivroService livroService  = new LivroService();
     private EstudanteService estudanteService = new EstudanteService();
@@ -33,7 +33,7 @@ public class EmprestimoService {
                     System.out.println(estudanteModel.toString());
                     System.out.println("Devolva um de seus livros para pedir novo emprestimo!!");
                     System.out.println();
-                }
+                    }
             }
             return mensagemDeRetornoSucesso;
         }
@@ -56,11 +56,6 @@ public class EmprestimoService {
         }
             return getMensagemDeRetornoFalha;
         }
-
-
-    public String aplicarMulta(){
-        return mensagemDeRetornoSucesso;
-    }
 
     public void limpa() {
         this.listaDeEmprestimos.clear();
