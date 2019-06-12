@@ -95,4 +95,16 @@ public class EstudanteModel {
 	public void setLimiteDeEmprestimos(int limiteDeEmprestimos) {
 		this.limiteDeEmprestimos = limiteDeEmprestimos;
 	}
+
+	@Override
+	public String toString() {
+		return "EstudanteModel{" +
+				"id=" + id +
+				", matricula='" + matricula + '\'' +
+				", nome='" + nome + '\'' +
+				", cpf='" + cpf + '\'' +
+				", rg='" + rg + '\'' +
+				", email='" + email + '\'' +
+				'}';
+	}
 }

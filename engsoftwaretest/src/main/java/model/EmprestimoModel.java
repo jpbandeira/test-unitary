@@ -1,27 +1,30 @@
 package model;
 
+import jdk.nashorn.internal.objects.annotations.Getter;
+import jdk.nashorn.internal.objects.annotations.Setter;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class EmprestimoModel{
 
-	private float descontoParaMulta;
-	private boolean livroAtrasado;
+	private Date dataDeEmprestimo;
+	private Date dataDeEntrega;
 
-	public float getDescontoParaMulta() {
-		return descontoParaMulta;
+	public Date getDataDeEmprestimo() {
+		return dataDeEmprestimo;
 	}
 
-	public void setDescontoParaMulta(float descontoParaMulta) {
-		this.descontoParaMulta = descontoParaMulta;
+	public void setDataDeEmprestimo(Date dataDeEmprestimo) {
+		this.dataDeEmprestimo = dataDeEmprestimo;
 	}
 
-	public boolean isLivroAtrasadoOuNao() {
-		return livroAtrasado;
+	public Date getDataDeEntrega() {
+		return dataDeEntrega;
 	}
 
-	public void setLivroAtrasadoOuNao(boolean livroAtrasado) {
-		this.livroAtrasado = livroAtrasado;
+	public void setDataDeEntrega(Date dataDeEntrega) {
+		this.dataDeEntrega = dataDeEntrega;
 	}
 }

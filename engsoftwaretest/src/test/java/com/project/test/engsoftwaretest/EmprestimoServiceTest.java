@@ -57,7 +57,7 @@ public class EmprestimoServiceTest {
     @Test
 	public void verificarLimiteDeEmprestimo(){
 		this.livroService.salvarLivro(livroModel);
-		this.livroService.atualizarQuantidadeDeExemplares(livroModel, 5, "mais");
+		this.livroService.atualizarQuantidadeDeExemplares(livroModel, 10, "mais");
 		this.estudanteService.salvarEstudante(estudanteModel);
 		this.estudanteService.salvarEstudante(estudanteModel2);
 
@@ -68,9 +68,10 @@ public class EmprestimoServiceTest {
 		this.emprestimoService.alugarLivro(livroModel, estudanteModel2);
 		this.emprestimoService.alugarLivro(livroModel, estudanteModel2);
 		this.emprestimoService.alugarLivro(livroModel, estudanteModel2);
+		this.emprestimoService.alugarLivro(livroModel, estudanteModel2);
 
 		assertEquals("Quando um es estudante1 alugar um livro, o seu limite de emprestimos deve ser incrementado", 3,this.estudanteService.getListaDeEstudantes().get(estudanteModel.getId() - 1).getLimiteDeEmprestimos());
-		assertEquals("Quando um es estudante2 alugar um livro, o seu limite de emprestimos deve ser incrementado", 2,this.estudanteService.getListaDeEstudantes().get(estudanteModel2.getId() - 1).getLimiteDeEmprestimos());
+		assertEquals("Quando um es estudante2 alugar um livro, o seu limite de emprestimos deve ser incrementado", 3,this.estudanteService.getListaDeEstudantes().get(estudanteModel2.getId() - 1).getLimiteDeEmprestimos());
 	}
 
 	@Test
@@ -78,6 +79,9 @@ public class EmprestimoServiceTest {
 		this.livroService.salvarLivro(livroModel);
 		this.livroService.atualizarQuantidadeDeExemplares(livroModel, 0, "mais");
 		this.estudanteService.salvarEstudante(estudanteModel);
-		assertEquals("qunado chamado, o mesmo deve retornar Sucesso", mensagemDeRetorno, this.emprestimoService.reservarLivro(livroModel, estudanteModel));
+		this.estudanteService.salvarEstudante(estudanteModel2);
+		this.emprestimoService.reservarLivro(livroModel, estudanteModel);
+		assertEquals("qunado chamado, o mesmo deve retornar Sucesso", mensagemDeRetorno, this.emprestimoService.reservarLivro(livroModel, estudanteModel2));
+		assertEquals("quando reservado um livro, o atributo livroResercado tem que ter como valor true", true, livroService.getListaDeLivros().get(livroModel.getId() - 1).isLivroReservado());
 	}
 }
